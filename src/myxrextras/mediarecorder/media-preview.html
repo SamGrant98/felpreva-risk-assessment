@@ -1,0 +1,54 @@
+<div id="previewContainer" class="previewContainer">
+  <div class="top-bar">
+      <h2 data-i18n="experience_end.save_options[0]" class="save" >HOLD IMAGE TO SAVE TO PHOTOS</h2>
+    <div class="preview-box">
+      <button id="closePreviewButton" class="style-reset icon-button">
+        <!-- <img src="//cdn.8thwall.com/web/img/mediarecorder/close-v2.svg"> -->
+        <img src="../../assets/UI/Felpreva/CloseButton_1.png">
+      </button>
+      <img id="imagePreview">
+      <video id="videoPreview" playsinline loop></video>
+      <button id="toggleMuteButton" class="style-reset icon-button" >
+        <img id="muteButtonImg" src="//cdn.8thwall.com/web/img/mediarecorder/sound-on-v1.svg">
+      </button>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="finalize-container">
+      <div id="finalizeText"></div>
+      <progress id="finalizeProgressBar" value="0" max="100"></progress>
+    </div>
+    <button id="downloadButton" class="style-reset icon-button">
+      <img src="//cdn.8thwall.com/web/img/mediarecorder/download-v1.svg">
+    </button>
+    <div id="openSafariText" class="style-reset">Downloading is only available in Safari</div>
+    <div id="tapAndHoldText" class="style-reset">Tap + Hold to Share</div>
+    <button id="actionButton" class="style-reset show-with-download-button">
+      <span id="actionButtonText"></span>
+      <img id="actionButtonImg">
+    </button>
+      <!-- Button Group -->
+      <div id="preview-group" class="small-button-group hidden-button">
+          <div id="report-button" class="small-button is-icon hidden-button" data-color="white">
+              <span data-i18n="experience_end.save_options[1]" class="small-button-text">Tap to get your results </span>
+              <span class="preview-button-icon" data-color="white">
+                  <svg width="32" height="32" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.08547 14.6389C1.08547 14.6389 7.41188 13.1176 11.1093 8.48523C11.3282 8.2131 11.3454 7.83153 11.16 7.53591C9.52123 4.91246 5.67757 2.0431 0.570958 0.197834C0.570958 0.197834 5.07137 4.11793 6.79075 6.77796C7.1716 7.36624 7.17115 8.1229 6.79632 8.71405C6.01789 9.94013 4.4427 11.9003 1.08547 14.6389Z" fill="currentColor"></path>
+                  </svg>
+              </span>
+          </div>
+          <div id="restart-button" class="small-button is-icon hidden-button" data-color="white">
+              <span data-i18n="experience_end.save_options[2]" class="small-button-text">Restart experience</span>
+              <span class="preview-button-icon" data-color="white">
+                  <svg width="32" height="32" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.08547 14.6389C1.08547 14.6389 7.41188 13.1176 11.1093 8.48523C11.3282 8.2131 11.3454 7.83153 11.16 7.53591C9.52123 4.91246 5.67757 2.0431 0.570958 0.197834C0.570958 0.197834 5.07137 4.11793 6.79075 6.77796C7.1716 7.36624 7.17115 8.1229 6.79632 8.71405C6.01789 9.94013 4.4427 11.9003 1.08547 14.6389Z" fill="currentColor"></path>
+                  </svg>
+              </span>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+

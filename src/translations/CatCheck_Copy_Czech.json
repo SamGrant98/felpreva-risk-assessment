@@ -1,0 +1,193 @@
+{
+  "launch": {
+    "welcome": "Vítejte v aplikaci CatCheck",
+    "motion_access": "„CatCheck.com“ žádá o přístup k údajům o pohybu a orientaci zařízení",
+    "loading": "",
+    "start": "Klikněte zde",
+    "rotate": "Otočte obrazovku",
+    "camera_access": "“CatCheck.com” žádá o přístup k fotoaparátu"
+  },
+  "ui_labels": {
+    "cancel": "Zrušit",
+    "allow": "Povolit",
+    "skip": "Přeskočit"
+  },
+  "placement": {
+    "find_spot": "Vyberte perrrr-fektní umístění pro vaši kočku",
+    "pinch_to_scale": "Přiblížením nebo oddálením upravte velikost",
+    "sound_warning_heading": "Mňauuuu!",
+    "sound_warning": "Tato aplikace pro posuzování rizik obsahuje zvuky zvířat. Připojte si prosím sluchátka nebo nastavte hlasitost tak, abyste nerušili ostatní.",
+    "sound_options": [
+      "Se zvukem",
+      "Bez zvuku"
+    ],
+    "multiple_cat": "Máte-li více koček, uložte si na konci výsledky a zopakujte pro každou kočku zvlášť."
+  },
+  "customisation": {
+    "intro": "Řekněte nám něco o své kočce",
+    "fur_pattern": "Jaký má váš kočka vzor srsti?",
+    "fur_options": [
+      "Černá a bílá",
+      "Zrzavá",
+      "Bílá",
+      "Černá",
+      "Šedá",
+      "Mourovatá",
+      "Trojbarevná",
+      "Color point",
+      "Želvovinová"
+    ],
+    "name_prompt": "Jak se jmenuje vaše kočka?",
+    "name_tooltip": "Jméno",
+    "age_prompt": "Kolik let je vaší kočce? (v letech)",
+    "age_tooltip": "Věk (ve letech)",
+    "weight_prompt": "Kolik váží?",
+    "weight_tooltip": "Hmotnost (v kg)",
+    "pregnancy_prompt": "Je březí nebo krmí koťata?",
+    "pregnancy_options": [
+      "Ano",
+      "Ne"
+    ],
+    "intro_name": "Seznamte se, tohle je",
+    "confirm": "Potvrdit"
+  },
+  "questions": {
+    "start": "Spustit hodnocení",
+    "back": "Zpět",
+    "chirp": "Vrrrrrrrrr! ",
+    "intro": "Nyní pár důležitých otázek. Odpovězte prosím co nejpřesněji.",
+    "outdoor": "Má [CAT NAME] přístup ven?",
+    "outdoor_options": [
+      "Ano",
+      "Ne",
+      "žije pouze v domácnosti"
+    ],
+    "outdoor_warning": "Pozor na zablácené boty!",
+    "other_pets": "Žije [CAT NAME] s jinými domácími zvířaty, která mají přístup ven?",
+    "other_pets_options": [
+      "Ano",
+      "Ne"
+    ],
+    "other_pets_warning": "Domácí zvířata, která mají přístup ven, mohou do domácnosti přenést\nparazity.",
+    "balcony_access": "Má [CAT NAME] přístup na balkon, zahradu nebo terasu?",
+    "balcony_access_options": [
+      "Ano",
+      "Ne"
+    ],
+    "balcony_warning": "Jakýkoli přístup do venkovního prostředí může zvýšit riziko nákazy parazity. Zeptejte se svého veterináře na více informací.",
+    "hunting": "Loví a žere [CAT NAME] kořist (spíše, než si s ní jen hraje)?",
+    "hunting_options": [
+      "Ano",
+      "pravidelně",
+      "Ano",
+      "někdy",
+      "Výjimečně",
+      "Nikdy"
+    ],
+    "hunting_warning": "Hlodavci a další volně žijící zvířata mohou přenášet parazity.",
+    "raw_meat": "Jí [CAT NAME] syrové maso?",
+    "raw_meat_options": [
+      "Ano",
+      "Ne"
+    ],
+    "raw_meat_warning": "Konzumace syrového masa může zvýšit riziko infekce parazity.",
+    "household_risk": "Je ve vaší domácnosti někdo mladší 5 let, nebo s oslabenou imunitou?",
+    "household_risk_options": [
+      "Ano",
+      "Ne"
+    ],
+    "household_warning": "Pokud se ve vaší domácnosti objeví mimořádné okolnosti, obraťte se na svého veterináře."
+  },
+  "treatment": {
+    "treatment_heading": "Tlapku na to! Nyní si řekneme více o ošetření proti parazitům.",
+    "protection_type": "Jaký typ ošetření proti parazitům používáte u své kočky?",
+    "protection_options": [
+      "Pouze proti blechám a klíšťatům",
+      "",
+      "Pouze proti vnitřním parazitům",
+      "",
+      "Obojí",
+      "ale jako dvě samostatná ošetření",
+      "Vše v jednom",
+      " široké spektrum proti blechám, klíšťatům a vnitřním parazitům",
+      "Žádné",
+      "Nevím"
+    ],
+    "options_risk_worms": "Vaše kočka by mohla být ohrožena nákazou vnitřními parazity, požádejte svého veterináře o další informace.",
+    "options_risk_fleas": "Vaše kočka by mohla být vystavena riziku napadení blechami a klíšťaty, požádejte svého veterináře o další informace.",
+    "options_risk_parasites": "Vaše kočka může být ohrožena parazity, požádejte svého veterináře o další informace.",
+    "options_risk_dontknow": "Poraďte se se svým veterinářem, jakou ochranu proti parazitům v současné době používáte.",
+    "treatment_frequency": "Jak často bývá [CAT NAME] ošetřován/a proti parazitům?",
+    "frequency_options": [
+      "1-3x ročně",
+      "4x ročně",
+      "5-11x ročně",
+      "12x ročně nebo vícekrát"
+    ],
+    "treatment_frequency_worms": "Jak často je [CAT NAME] odčervován/a?",
+    "treatment_frequency_fleas": "Jak často je [CAT NAME] ošetřován/a proti blechám a klíšťatům?",
+    "preferred_treatment": "Jak často byste vaši kočku  nejraději ošetřovali proti parazitům?",
+    "preferred_frequency": [
+      "Čtvrtletně",
+      "Měsíčně"
+    ],
+    "preferred_product": "Jaký typ přípravku proti parazitům byste nejraději použili u vaší kočky?",
+    "product_options": [
+      "Spot-on",
+      "(roztok pro nakapání na kůži)",
+      "Tablety"
+    ]
+  },
+  "experience_end": {
+    "perfect": "Perrrrrfektní! ",
+    "thank-you": "Děkuji za odpověď! Vyfoťte mě pomocí tlačítka a uložte si výsledky. Pak se o ně podělte s mým veterinářem!",
+    "save_options": [
+      "ULOŽIT VÝSLEDKY A SDÍLET JE S VETERINÁŘEM",
+      "Uložit výsledky do galerie",
+      "Vytvořit další profil pro hodnocení rizik"
+    ],
+    "save_camera_roll": "Uložit výsledky do galerie",
+    "create_another_profile": "Vytvořit další rizikový profil",
+    "save_and_share_photo": "Uložit a sdílet výsledky",
+    "final_instructions": [
+      "Výsledky uložte do galerie fotek.",
+      "SDÍLEJTE JE PROSÍM SE SVÝM VETERINÁŘEM.",
+      "Máte-li více koček, vyplňte dotazník ještě jednou kliknutím na tlačítko níže."
+    ]
+  },
+  "results": {
+    "bio": "Základní údaje",
+    "age": "Věk",
+    "weight": "Váha",
+    "pregnant": "Březí / krmí koťata",
+    "esccap": "ESCCAP riziko",
+    "risk_profile": "Úroveň rizika",
+    "risks": [
+      "Nízké",
+      "Střední",
+      "Vysoké"
+    ],
+    "environment": "PROSTŘEDÍ",
+    "behaviour": "CHOVÁNÍ",
+    "household": "DOMÁCNOST",
+    "low_risk": [
+      "Bez přístupu ven",
+      "Bez přístupu na balkon",
+      "Bez přístupu k syrovému masu",
+      "Neloví a nežere kořist pravidelně",
+      "Nežije s domácími zvířaty, která mají přístup ven",
+      "Domácnost s nižším rizikem"
+    ],
+    "medium_risk": [
+      "Má přístup ven",
+      "Jí syrové maso",
+      "Má přístup na balkon",
+      "Žije s domácími zvířaty, která mají přístup ven",
+      "Občas loví"
+    ],
+    "high_risk": [
+      "Domácnost s vysokým rizikem",
+      "Loví pravidelně"
+    ]
+  }
+}

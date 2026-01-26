@@ -1,0 +1,17 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Capture Icon">
+<g id="TL">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M1.70551 1.70551H8.82106V0H0.013923V0.0356214H0L3.91388e-07 8.62039H1.70551L1.70551 1.70551Z" fill="white"/>
+</g>
+<g id="TR">
+<path id="Union_2" fill-rule="evenodd" clip-rule="evenodd" d="M32.2928 1.70551H25.1772V0H33.9844V0.0348671H33.9983L33.9983 8.61963H32.2928L32.2928 1.70551Z" fill="white"/>
+</g>
+<g id="BR">
+<path id="Union_3" fill-rule="evenodd" clip-rule="evenodd" d="M32.2928 32.295H25.1772V34.0005H33.9844V33.9649H33.9983L33.9983 25.3801H32.2928L32.2928 32.295Z" fill="white"/>
+</g>
+<g id="BL">
+<path id="Union_4" fill-rule="evenodd" clip-rule="evenodd" d="M1.70551 32.295H8.82106V34.0005H0.0139231V33.9649H0L3.91388e-07 25.3801H1.70551L1.70551 32.295Z" fill="white"/>
+</g>
+<ellipse id="Dot" cx="16.4595" cy="16.4602" rx="5.96928" ry="5.81857" fill="#F7F7F7"/>
+</g>
+</svg>

@@ -1,0 +1,193 @@
+{
+  "launch": {
+    "welcome": "Welkom bij CatCheck",
+    "motion_access": "“URL_TBD” wil toegang tot \"Beweging\" en \"Oriëntatie\"",
+    "loading": "",
+    "start": "Tik om te starten",
+    "rotate": "Draai je scherm",
+    "camera_access": "“URL_TBD” wil toegang tot de camera"
+  },
+  "ui_labels": {
+    "cancel": "Annuleren",
+    "allow": "Toestaan",
+    "skip": "Overslaan"
+  },
+  "placement": {
+    "find_spot": "Vind de perrrfecte plek Tik om te richten",
+    "pinch_to_scale": "Knijp om te schalen",
+    "sound_warning_heading": "Miauw!",
+    "sound_warning": "Deze risicotester maakt gebruik van dierengeluiden, plug je koptelefoon in of zet het volume zachter om anderen niet te storen.",
+    "sound_options": [
+      "Met geluid",
+      "Zonder geluid"
+    ],
+    "multiple_cat": "Als je meerdere katten hebt, bewaar het resultaat aan het einde en herhaal deze test voor elke kat"
+  },
+  "customisation": {
+    "intro": "Vertel ons over je kat",
+    "fur_pattern": "Wat voor vachtpatroon heeft jouw kat?",
+    "fur_options": [
+      "Tuxedo",
+      "Ros",
+      "Wit",
+      "Zwart",
+      "Grijs",
+      "Cypers",
+      "Lapjes",
+      "Siamees",
+      "Schildpad"
+    ],
+    "name_prompt": "Hoe heet je kat?",
+    "name_tooltip": "Naam",
+    "age_prompt": "Hoe oud is je kat?",
+    "age_tooltip": "Leeftijd (in jaren)",
+    "weight_prompt": "Hoeveel weegt je kat?",
+    "weight_tooltip": "Gewicht (in kg)",
+    "pregnancy_prompt": "Is je kat zwanger of zogend?",
+    "pregnancy_options": [
+      "Ja",
+      "Nee"
+    ],
+    "intro_name": "Dit is",
+    "confirm": "Bevestigen"
+  },
+  "questions": {
+    "start": "Beoordeling starten",
+    "back": "Terug",
+    "chirp": "Prrrr!",
+    "intro": "Nu volgen enkele belangrijke vragen over mij. Beantwoord ze zo nauwkeurig mogelijk.",
+    "outdoor": "Komt [CAT NAME] buiten in de natuur?",
+    "outdoor_options": [
+      "Ja",
+      "Nee",
+      "is altijd binnen"
+    ],
+    "outdoor_warning": "Pas op voor modderige schoenen!",
+    "other_pets": "Woont [CAT NAME] samen met andere buitenhuisdieren",
+    "other_pets_options": [
+      "Ja",
+      "Nee"
+    ],
+    "other_pets_warning": "Buitenhuisdieren kunnen parasieten mee naar binnen brengen.",
+    "balcony_access": "Heeft [CAT NAME] toegang tot een balkon, tuin of patio?",
+    "balcony_access_options": [
+      "Ja",
+      "Nee"
+    ],
+    "balcony_warning": "Toegang tot buiten kan het risico op parasietinfecties verhogen, vraag je dierenarts om meer informatie.",
+    "hunting": "Jaagt [CAT NAME] op prooien en eet hij /zij die op (i.p.v. er alleen mee te spelen)?",
+    "hunting_options": [
+      "Ja - regelmatig",
+      "(meestal!)",
+      "Ja",
+      "soms",
+      "Zelden",
+      "Nooit"
+    ],
+    "hunting_warning": "Knaag- en andere dieren kunnen parasieten dragen",
+    "raw_meat": "Eet [CAT NAME] rauw vlees?",
+    "raw_meat_options": [
+      "Ja",
+      "Nee"
+    ],
+    "raw_meat_warning": "Het eten van rauw vlees kan het risico op parasietinfecties verhogen",
+    "household_risk": "Is er iemand in je huishouden jonger dan 5 jaar of met verminderde weerstand?",
+    "household_risk_options": [
+      "Ja",
+      "Nee"
+    ],
+    "household_warning": "Als er bijzondere omstandigheden gelden voor iemand in je huishouden, bespreek dit dan met je dierenarts"
+  },
+  "treatment": {
+    "treatment_heading": "Perrrfect! Laten we het nu over mijn behandeling tegen parasieten hebben",
+    "protection_type": "Welke soort bescherming tegen parasieten gebruik je voor [CAT NAME]?",
+    "protection_options": [
+      "Vlooien en teken",
+      "alleen behandeling",
+      "Wormen",
+      "alleen behandeling",
+      "Beide",
+      "maar als twee aparte behandelingen",
+      "Alles-in-één",
+      "breedspectrum tegen vlooien, teken en wormen",
+      "Geen",
+      "Ik weet het niet"
+    ],
+    "options_risk_worms": "Je kat kan het risico lopen besmet te worden met wormen, vraag je dierenarts om meer informatie",
+    "options_risk_fleas": "Je kat kan het risico lopen besmet te worden met vlooien en teken, vraag je dierenarts om meer informatie",
+    "options_risk_parasites": "Je kat kan het risico lopen besmet te worden met parasieten, vraag je dierenarts om meer informatie",
+    "options_risk_dontknow": "Bespreek met je dierenarts welke bescherming tegen parasieten je momenteel gebruikt",
+    "treatment_frequency": "Hoe vaak behandel je [CAT NAME] tegen parasieten?",
+    "frequency_options": [
+      "1-3 keer per jaar",
+      "4 keer per jaar",
+      "5-11 keer per jaar",
+      "12 keer of meer"
+    ],
+    "treatment_frequency_worms": "Hoe vaak behandel je [CAT NAME] tegen wormen?",
+    "treatment_frequency_fleas": "Hoe vaak behandel je [CAT NAME] tegen vlooien en teken?",
+    "preferred_treatment": "Hoe vaak zou je [CAT NAME] tegen parasieten willen behandelen?",
+    "preferred_frequency": [
+      "Ieder kwartaal",
+      "Maandelijks"
+    ],
+    "preferred_product": "Welk soort parasietenproduct zou je willen gebruiken voor [CAT NAME]?",
+    "product_options": [
+      "Spot-on",
+      "(druppels op de huid)",
+      "Tablet"
+    ]
+  },
+  "experience_end": {
+    "perfect": "Perrrrfect!",
+    "thank-you": "Bedankt voor je antwoorden! Maak een leuke foto van mij met de onderstaande knop om mijn resultaten te tonen. En deel ze daarna met mijn dierenarts!",
+    "save_options": [
+      "RESULTATEN BEWAREN EN MET JE DIERENARTS DELEN",
+      "Resultaten bewaren in Foto's",
+      "Creëer nog een risicoprofiel"
+    ],
+    "save_camera_roll": "Resultaten bewaren in Foto's",
+    "create_another_profile": "Creëer nog een risicoprofiel",
+    "save_and_share_photo": "Bewaar en deel de foto van je kat",
+    "final_instructions": [
+      "Je resultaten moeten in je Foto's worden opgeslagen.",
+      "DEEL ZE MET JE DIERENARTS",
+      "Heb je meer dan één kat, herhaal de test dan voor elke andere kat met de onderstaande knop."
+    ]
+  },
+  "results": {
+    "bio": "Bio",
+    "age": "Leeftijd",
+    "weight": "Gewicht",
+    "pregnant": "Zwanger/Zogend",
+    "esccap": "ESCCAP Risico:",
+    "risk_profile": "Risiconiveau",
+    "risks": [
+      "Lager",
+      "Gemiddeld",
+      "Hoger risico"
+    ],
+    "environment": "OMGEVING",
+    "behaviour": "GEDRAG",
+    "household": "HUISHOUDEN",
+    "low_risk": [
+      "Geen toegang tot buiten",
+      "Geen toegang tot balkon",
+      "Geen rauw vlees",
+      "Jaagt niet regelmatig en eet geen prooi",
+      "Woont niet met buitenhuisdieren",
+      "Huishouden met lager risico"
+    ],
+    "medium_risk": [
+      "Toegang tot buiten",
+      "Eet rauw vlees",
+      "Toegang tot balkon",
+      "Woont met buitenhuisdieren",
+      "Jaagt soms"
+    ],
+    "high_risk": [
+      "Huishouden met hoog risico",
+      "Jaagt wekelijks"
+    ]
+  }
+}

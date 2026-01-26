@@ -1,0 +1,193 @@
+{
+  "launch": {
+    "welcome": "Vitajte v aplikácii CatCheck",
+    "motion_access": "„CatCheck.com“ žiada o prístup k údajom o pohybe a orientácii zariadenia",
+    "loading": "",
+    "start": "Kliknite sem",
+    "rotate": "Otočte obrazovku",
+    "camera_access": "„CatCheck.com“ žiada o prístup k fotoaparátu"
+  },
+  "ui_labels": {
+    "cancel": "Zrušiť",
+    "allow": "Povoliť",
+    "skip": "Preskočiť"
+  },
+  "placement": {
+    "find_spot": "Vyberte perrrr-fektné umiestnenie pre vašu mačku",
+    "pinch_to_scale": "Priblížením alebo oddialením upravte veľkosť",
+    "sound_warning_heading": "Mňauuuu! ",
+    "sound_warning": "Táto aplikácia na posudzovanie rizík obsahuje zvuky zvierat. Pripojte si prosím slúchadlá alebo nastavte hlasitosť tak, aby ste nerušili ostatných.",
+    "sound_options": [
+      "So zvukom",
+      "Bez zvuku"
+    ],
+    "multiple_cat": "Ak máte viac mačiek, výsledky si uložte na konci a túto akciu zopakujte pre každú mačku zvlášť."
+  },
+  "customisation": {
+    "intro": "Povedzte nám niečo o svojej mačke",
+    "fur_pattern": "Aký má vaša mačka vzor srsti?",
+    "fur_options": [
+      "Čierna a biela",
+      "Ryšavá",
+      "Biela",
+      "Čierna",
+      "Sivá",
+      "Strakatá",
+      "Trojfarebná",
+      "Color point",
+      "Korytnačia"
+    ],
+    "name_prompt": "Ako sa volá vaša mačka?",
+    "name_tooltip": "Meno",
+    "age_prompt": "Koľko rokov má vaša mačka?",
+    "age_tooltip": "Vek (v rokoch)",
+    "weight_prompt": "Koľko váži?",
+    "weight_tooltip": "Hmotnosť (v kg)",
+    "pregnancy_prompt": "Je gravidná alebo kŕmi mačiatka?",
+    "pregnancy_options": [
+      "Áno",
+      "Nie"
+    ],
+    "intro_name": "Zoznámte sa, toto je",
+    "confirm": "Potvrdiť"
+  },
+  "questions": {
+    "start": "Spustiť hodnotenie",
+    "back": "Späť",
+    "chirp": "Vrrrrrrrrr! ",
+    "intro": "Teraz pár dôležitých otázok. Prosím, odpovedzte čo najpresnejšie.",
+    "outdoor": "Má [CAT NAME] prístup von?",
+    "outdoor_options": [
+      "Áno",
+      "Nie",
+      "žije výlučne v interiéri"
+    ],
+    "outdoor_warning": "Pozor na zablatené́ topánky!",
+    "other_pets": "Žije [CAT NAME] s inými domácimi zvieratami, ktoré majú prístup von?",
+    "other_pets_options": [
+      "Áno",
+      "Nie"
+    ],
+    "other_pets_warning": "Domáce zvieratá, ktoré chodia von, môžu priniesť parazity do domácnosti.",
+    "balcony_access": "Má [CAT NAME] prístup na balkón, záhradu alebo terasu?",
+    "balcony_access_options": [
+      "Áno",
+      "Nie"
+    ],
+    "balcony_warning": "Akýkoľvek kontakt s vonkajším prostredím môže zvýšiť riziko nákazy parazitmi. Kontaktujte svojho veterinára pre bližšie informácie.",
+    "hunting": "Loví a žerie [CAT NAME] korisť (nielen že sa s ňou hrá)?",
+    "hunting_options": [
+      "Áno",
+      "pravidelne",
+      "Áno",
+      "niekedy",
+      "Výnimočne",
+      "Nikdy"
+    ],
+    "hunting_warning": "Hlodavce a iné voľne žijúce zvieratá môžu prenášať parazity.",
+    "raw_meat": "Je [CAT NAME] kŕmený/á surovým mäsom?",
+    "raw_meat_options": [
+      "Áno",
+      "Nie"
+    ],
+    "raw_meat_warning": "Konzumácia surového mäsa môže zvýšiť riziko infekcie parazitmi.",
+    "household_risk": "Žije vo vašej domácnosti niekto mladší ako 5 rokov alebo s oslabenou imunitou?",
+    "household_risk_options": [
+      "Áno",
+      "Nie"
+    ],
+    "household_warning": "Ak sa vo vašej domácnosti vyskytnú mimoriadne okolnosti, obráťte sa na svojho veterinára."
+  },
+  "treatment": {
+    "treatment_heading": "Labku na to! Teraz si povieme viac o ošetrení proti parazitom.",
+    "protection_type": "Aký typ ochrany proti parazitom používate pre svoju mačku?",
+    "protection_options": [
+      "Iba proti blchám a kliešťom",
+      "",
+      "Iba proti vnútorným parazitom",
+      "",
+      "Oboje",
+      "ale ako dve samostatné ošetrenia",
+      "Všetko v jednom",
+      "širokospektrálne, proti blchám, kliešťom aj vnútorným parazitom",
+      "Žiadne",
+      "Neviem"
+    ],
+    "options_risk_worms": "Vaša mačka môže byť ohrozená vnútornými parazitmi. Požiadajte svojho veterinára o ďalšie informácie.",
+    "options_risk_fleas": "Vaša mačka môže byť ohrozená blchami a kliešťami. Požiadajte svojho veterinára o ďalšie informácie.",
+    "options_risk_parasites": "Vaša mačka môže byť ohrozená parazitmi. Požiadajte svojho veterinára o ďalšie informácie.",
+    "options_risk_dontknow": "Porozprávajte sa so svojím veterinárom o tom, akú ochranu proti parazitom v súčasnosti používate.",
+    "treatment_frequency": "Ako často býva ošetrovaný/á [CAT NAME] proti parazitom?",
+    "frequency_options": [
+      "1-3x ročne",
+      "4x ročne",
+      "5-11x ročne",
+      "12 a viackrát ročne"
+    ],
+    "treatment_frequency_worms": "Ako často je [CAT NAME] odčervovaný/á?",
+    "treatment_frequency_fleas": "Ako často je [CAT NAME]  ošetrovaný/á proti blchám a kliešťom?",
+    "preferred_treatment": "Ako často by ste najradšej ošetrovali vašu mačku proti parazitom?",
+    "preferred_frequency": [
+      "Štvrťročne",
+      "Mesačne"
+    ],
+    "preferred_product": "Aký typ prípravku proti parazitom by ste najradšej používali pre vašu mačku?",
+    "product_options": [
+      "Spot-on",
+      "(roztok na kvapkanie na kožu)",
+      "Tablety"
+    ]
+  },
+  "experience_end": {
+    "perfect": "Perrrrrfektné! ",
+    "thank-you": "Ďakujem za odpovede! Odfoťte ma pomocou tlačidla a uložte si výsledky. Potom sa o ne podeľte s mojím veterinárom!",
+    "save_options": [
+      "ULOŽIŤ VÝSLEDKY A ZDIEĽAŤ ICH S VETERINÁROM",
+      "Uložiť a zdieľať výsledky",
+      "Vytvoriť ďalší profil na hodnotenie rizika"
+    ],
+    "save_camera_roll": "Uložiť výsledky do galérie",
+    "create_another_profile": "Vytvoriť ďalší rizikový profil",
+    "save_and_share_photo": "Uložiť a zdieľať výsledky",
+    "final_instructions": [
+      "ZDIEĽAJTE ICH PROSÍM SO SVOJÍM VETERINÁROM.",
+      "Uložte výsledky do galérie.",
+      "Ak máte viac mačiek, vyplňte dotazník znova kliknutím na tlačidlo nižšie."
+    ]
+  },
+  "results": {
+    "bio": "Základné údaje",
+    "age": "Vek",
+    "weight": "Hmotnosť",
+    "pregnant": "Gravidná / kŕmi mačiatka",
+    "esccap": "ESCCAP riziko",
+    "risk_profile": "Úroveň rizika",
+    "risks": [
+      "Nízke",
+      "Stredné",
+      "Vysoké"
+    ],
+    "environment": "PROSTREDIE",
+    "behaviour": "SPRÁVANIE",
+    "household": "Domácnosť",
+    "low_risk": [
+      "Bez prístupu von",
+      "Bez prístupu na balkón",
+      "Bez prístupu k surovému mäsu",
+      "Neloví a nežerie korisť pravidelne",
+      "Nežije s domácimi zvieratami, ktoré majú prístup von",
+      "Domácnosť s nižším rizikom"
+    ],
+    "medium_risk": [
+      "Má prístup von",
+      "Je kŕmená surovým mäsom",
+      "Má prístup na balkón",
+      "Žije s domácimi zvieratami, ktoré majú prístup von",
+      "Občas loví"
+    ],
+    "high_risk": [
+      "Domácnosť s vysokým rizikom",
+      "Loví pravidelne"
+    ]
+  }
+}

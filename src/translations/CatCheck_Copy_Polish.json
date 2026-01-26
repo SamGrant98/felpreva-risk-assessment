@@ -1,0 +1,193 @@
+{
+  "launch": {
+    "welcome": "Witaj w CatCheck",
+    "motion_access": "“URL_TBD” chce uzyskać dostęp do funkcji ruchu i orientacji ",
+    "loading": "",
+    "start": "Stuknij, aby rozpocząć",
+    "rotate": "Obróć ekran",
+    "camera_access": "“CatCheck.com” chce uzyskać dostęp do aparatu"
+  },
+  "ui_labels": {
+    "cancel": "Anulujv",
+    "allow": "Zezwól",
+    "skip": "Pomiń"
+  },
+  "placement": {
+    "find_spot": "Znajdź perrrfekcyjne miejsce: stuknij by umieścić",
+    "pinch_to_scale": "Uszczypnij, aby zmienić skalę",
+    "sound_warning_heading": "Miiiiauuuu!",
+    "sound_warning": "Ten model oceny ryzyka emituje dźwięki wydawane przez zwierzęta, dlatego podłącz słuchawki lub zmniejsz głośność, aby nie przeszkadzać innym osobom.",
+    "sound_options": [
+      "Z dźwiękiem",
+      "Bez dźwięku"
+    ],
+    "multiple_cat": "Jeśli masz w domu więcej niż jednego kota, zapisz wyniki i powtórz ocenę dla każdego z nich."
+  },
+  "customisation": {
+    "intro": "Opowiedz nam o swoim kocie.",
+    "fur_pattern": "Jaki wzór futra ma twój kot?",
+    "fur_options": [
+      "Smoking / Czarno-białe",
+      "Rude",
+      "Białe",
+      "Czarne",
+      "Szare",
+      "Pręgowane",
+      "Calico/ Szylkretowe z białym",
+      "Point",
+      "Szylkretowe"
+    ],
+    "name_prompt": "Jak ma na imię Twój kot?",
+    "name_tooltip": "Imię",
+    "age_prompt": "Ile ma lat?",
+    "age_tooltip": "Wiek (w latach)",
+    "weight_prompt": "Ile waży?",
+    "weight_tooltip": "Waga (w kg)",
+    "pregnancy_prompt": "Czy jest w ciąży lub w trakcie karmienia?",
+    "pregnancy_options": [
+      "Tak",
+      "Nie"
+    ],
+    "intro_name": "Oto",
+    "confirm": "Potwierdź"
+  },
+  "questions": {
+    "start": "Rozpocznij ocenę",
+    "back": "Wstecz",
+    "chirp": "Mrrrrrrrrrr! ",
+    "intro": "A teraz kilka ważnych pytań na mój temat. Proszę, odpowiedz na nie najdokładniej, jak potrafisz.",
+    "outdoor": "Czy [CAT NAME] wychodzi na zewnątrz?",
+    "outdoor_options": [
+      "Tak",
+      "Nie",
+      "to kot niewychodzący"
+    ],
+    "outdoor_warning": "Uważaj na zabłocone obuwie!",
+    "other_pets": "Czy [CAT NAME] mieszka ze zwierzętami wychodzącymi na zewnątrz?",
+    "other_pets_options": [
+      "Tak",
+      "Nie"
+    ],
+    "other_pets_warning": "Zwierzęta wychodzące mogą przynosić pasożyty do domu.",
+    "balcony_access": "Czy [CAT NAME] ma dostęp do balkonu, ogrodu lub patio?",
+    "balcony_access_options": [
+      "Tak",
+      "Nie"
+    ],
+    "balcony_warning": "Wszelka aktywność na zewnątrz może zwiększyć ryzyko zakażenia pasożytami. Aby uzyskać więcej informacji, skonsultuj się z lekarzem weterynarii.",
+    "hunting": "Czy [CAT NAME] poluje i zjada zdobycz (zamiast tylko się nią bawić)?",
+    "hunting_options": [
+      "Tak – regularnie",
+      "(przez większość tygodni!)",
+      "Tak",
+      "czasami",
+      "Bardzo rzadko",
+      "Nigdy"
+    ],
+    "hunting_warning": "Gryzonie i inne dzikie zwierzęta mogą przenosić pasożyty",
+    "raw_meat": "Czy [CAT NAME] je surowe mięso?",
+    "raw_meat_options": [
+      "Tak",
+      "Nie"
+    ],
+    "raw_meat_warning": "Spożycie surowego mięsa może zwiększać ryzyko zakażenia pasożytami",
+    "household_risk": "Czy w Twoim gospodarstwie domowym znajdują się osoby poniżej 5 roku życia lub cierpiące na obniżoną odporność?",
+    "household_risk_options": [
+      "Tak",
+      "Nie"
+    ],
+    "household_warning": "Jeśli ktoś w Twoim gospodarstwie domowym wymaga szczególnej opieki, porozmawiaj na ten temat z lekarzem weterynarii."
+  },
+  "treatment": {
+    "treatment_heading": "Mrauskonale! A teraz porozmawiajmy o leczeniu moich pasożytów",
+    "protection_type": "Jakiego rodzaju ochroną przed pasożytami jest objęty [CAT NAME]?",
+    "protection_options": [
+      "Tylko pchły i kleszcze",
+      "tylko pasożyty wewnętrzne",
+      "Tylko odrobaczanie",
+      "",
+      "Oba rodzaje",
+      "ale w ramach dwóch osobnych kuracji",
+      "All-in-one",
+      "szerokie spektrum na pchły, kleszcze i robaki wewnętrzne",
+      "Żadną",
+      "Nie wiem"
+    ],
+    "options_risk_worms": "Twój kot może być narażony na zarażenie się robakami, poproś lekarza weterynarii o więcej informacji.",
+    "options_risk_fleas": "Twój kot może być narażony na pchły i kleszcze. Poproś lekarza weterynarii o więcej informacji.",
+    "options_risk_parasites": "Twój kot może być narażony na zarażenie pasożytami. Poproś lekarza weterynarii o więcej informacji.",
+    "options_risk_dontknow": "Porozmawiaj z lekarzem weterynarii o obecnie stosowanej przez Ciebie ochronie przed pasożytami",
+    "treatment_frequency": "Jak często [CAT NAME] jest poddawany(-a) profilaktyce przeciwpasożytniczej ?",
+    "frequency_options": [
+      "1–3 razy w roku",
+      "4 razy w roku",
+      "5–11 razy w roku",
+      "12 razy lub więcej"
+    ],
+    "treatment_frequency_worms": "Jak często [CAT NAME] jest odrobaczany(-a)?",
+    "treatment_frequency_fleas": "Jak często [CAT NAME] jest leczony(-a) na pchły i kleszcze?",
+    "preferred_treatment": "Jak często [CAT NAME] powinien według Ciebie mieć przeprowadzaną kurację przeciwko pasożytom?",
+    "preferred_frequency": [
+      "Kwartalnie",
+      "Miesięcznie"
+    ],
+    "preferred_product": "Jakiego rodzaju produkt [CAT NAME] powinien według Ciebie przyjmować w ramach profilaktyki przeciwko pasożytom?",
+    "product_options": [
+      "Spot-on",
+      "(krople aplikowane na skórę)",
+      "Tabletki"
+    ]
+  },
+  "experience_end": {
+    "perfect": "Mrrrrautastycznie! ",
+    "thank-you": "Dziękuję za odpowiedzi! Zrób mi słodkie zdjęcie, korzystając z przycisku poniżej, aby wygenerować moje wyniki. Następnie podziel się nimi z moim lekarzem weterynarii!",
+    "save_options": [
+      "ZAPISZ WYNIKI I PODZIEL SIĘ Z LEKARZEM WETERYNARII",
+      "Zapisz wyniki w rolce aparatu",
+      "Stwórz kolejny profil ryzyka"
+    ],
+    "save_camera_roll": "Zapisz wyniki w rolce aparatu",
+    "create_another_profile": "Stwórz kolejny profil ryzyka",
+    "save_and_share_photo": "Zapisz i podziel się zdjęciem swojego kota",
+    "final_instructions": [
+      "Twoje wyniki powinny zostać zapisane w rolce aparatu.",
+      "PODZIEL SIĘ NIMI Z LEKARZEM WETERYNARII",
+      "Jeśli masz więcej niż jednego kota, powtórz test, korzystając z poniższego przycisku."
+    ]
+  },
+  "results": {
+    "bio": "Bio",
+    "age": "Wiek",
+    "weight": "Waga",
+    "pregnant": "Ciąża/karmienie",
+    "esccap": "Ryzyko ESCCAP:",
+    "risk_profile": "Poziom ryzyka",
+    "risks": [
+      "Niskie",
+      "Umiarkowane",
+      "Wysokie ryzyko"
+    ],
+    "environment": "ŚRODOWISKO",
+    "behaviour": "ZACHOWANIE",
+    "household": "GOSPODARSTWO DOMOWE",
+    "low_risk": [
+      "Nie wychodzi na zewnątrz",
+      "Brak dostępu do balkonu",
+      "Brak surowego mięsa w diecie",
+      "Nie poluje i nie zjada regularnie zdobyczy",
+      "Nie mieszka z wychodzącymi zwierzętami",
+      "Gospodarstwo domowe niskiego ryzyka"
+    ],
+    "medium_risk": [
+      "Wychodzi na zewnątrz",
+      "Je surowe mięso",
+      "Ma dostęp do balkonu",
+      "Mieszka z wychodzącymi zwierzętami",
+      "Czasami poluje"
+    ],
+    "high_risk": [
+      "Gospodarstwo domowe wysokiego ryzyka",
+      "Poluje każdego tygodnia"
+    ]
+  }
+}

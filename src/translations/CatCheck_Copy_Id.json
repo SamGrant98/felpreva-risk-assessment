@@ -1,0 +1,193 @@
+{
+  "launch": {
+    "welcome": "61",
+    "motion_access": "65",
+    "loading": "",
+    "start": "64",
+    "rotate": "",
+    "camera_access": "68"
+  },
+  "ui_labels": {
+    "cancel": "69",
+    "allow": "70",
+    "skip": ""
+  },
+  "placement": {
+    "find_spot": "71",
+    "pinch_to_scale": "72",
+    "sound_warning_heading": "",
+    "sound_warning": "73",
+    "sound_options": [
+      "74",
+      "75"
+    ],
+    "multiple_cat": "76"
+  },
+  "customisation": {
+    "intro": "77",
+    "fur_pattern": "",
+    "fur_options": [
+      "79",
+      "80",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87"
+    ],
+    "name_prompt": "88",
+    "name_tooltip": "",
+    "age_prompt": "90",
+    "age_tooltip": "",
+    "weight_prompt": "92",
+    "weight_tooltip": "",
+    "pregnancy_prompt": "94",
+    "pregnancy_options": [
+      "95",
+      "96"
+    ],
+    "intro_name": "97",
+    "confirm": ""
+  },
+  "questions": {
+    "start": "",
+    "back": "BACK",
+    "chirp": "",
+    "intro": "98",
+    "outdoor": "99",
+    "outdoor_options": [
+      "100",
+      "",
+      "101"
+    ],
+    "outdoor_warning": "102",
+    "other_pets": "104",
+    "other_pets_options": [
+      "105",
+      "106"
+    ],
+    "other_pets_warning": "107",
+    "balcony_access": "108",
+    "balcony_access_options": [
+      "109",
+      "110"
+    ],
+    "balcony_warning": "111",
+    "hunting": "112",
+    "hunting_options": [
+      "",
+      "113",
+      "Yes",
+      "sometimes",
+      "116",
+      "117"
+    ],
+    "hunting_warning": "115",
+    "raw_meat": "118",
+    "raw_meat_options": [
+      "119",
+      "120"
+    ],
+    "raw_meat_warning": "121",
+    "household_risk": "122",
+    "household_risk_options": [
+      "123",
+      "124"
+    ],
+    "household_warning": "125"
+  },
+  "treatment": {
+    "treatment_heading": "126",
+    "protection_type": "127",
+    "protection_options": [
+      "128",
+      "",
+      "129",
+      "",
+      "133",
+      "",
+      "134",
+      "",
+      "135",
+      "136"
+    ],
+    "options_risk_worms": "130",
+    "options_risk_fleas": "131",
+    "options_risk_parasites": "132",
+    "options_risk_dontknow": "",
+    "treatment_frequency": "137",
+    "frequency_options": [
+      "148",
+      "149",
+      "150",
+      "151"
+    ],
+    "treatment_frequency_worms": "142",
+    "treatment_frequency_fleas": "147",
+    "preferred_treatment": "152",
+    "preferred_frequency": [
+      "153",
+      "154"
+    ],
+    "preferred_product": "155",
+    "product_options": [
+      "156",
+      "",
+      "157"
+    ]
+  },
+  "experience_end": {
+    "perfect": "158",
+    "thank-you": "158",
+    "save_options": [
+      "159",
+      "160",
+      "192"
+    ],
+    "save_camera_roll": "160",
+    "create_another_profile": "192",
+    "save_and_share_photo": "191",
+    "final_instructions": [
+      "190",
+      "",
+      ""
+    ]
+  },
+  "results": {
+    "bio": "161",
+    "age": "163",
+    "weight": "165",
+    "pregnant": "167",
+    "esccap": "169",
+    "risk_profile": "172",
+    "risks": [
+      "173",
+      "173",
+      "173"
+    ],
+    "environment": "193",
+    "behaviour": "194",
+    "household": "195",
+    "low_risk": [
+      "175",
+      "176",
+      "177",
+      "178",
+      "179",
+      "180"
+    ],
+    "medium_risk": [
+      "182",
+      "183",
+      "184",
+      "185",
+      "186"
+    ],
+    "high_risk": [
+      "188",
+      "189"
+    ]
+  }
+}

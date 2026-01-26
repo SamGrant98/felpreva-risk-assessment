@@ -1,0 +1,193 @@
+{
+  "launch": {
+    "welcome": "Bem-vindo ao CatCheck",
+    "motion_access": "“URL_TBD” gostaria de aceder a Movimento e Orientação",
+    "loading": "",
+    "start": "Toque para começar",
+    "rotate": "Gire a tela",
+    "camera_access": "“CatCheck.com” gostaria de Aceder à Câmara"
+  },
+  "ui_labels": {
+    "cancel": "Cancelar",
+    "allow": "Permitir",
+    "skip": "Pular"
+  },
+  "placement": {
+    "find_spot": "Encontre o local perrrrfeito Toque no Ecrã",
+    "pinch_to_scale": "Use o gesto de pinça para redimensionar",
+    "sound_warning_heading": "Miaauuuuu!",
+    "sound_warning": "Esta avaliação de risco inclui sons de animais. Por favor, ligue os auscultadores ou baixe o volume para não incomodar ninguém.",
+    "sound_options": [
+      "Com som",
+      "Sem som"
+    ],
+    "multiple_cat": "Se tiver vários gatos, guarde os seus resultados ao terminar a avaliação e repita-a para cada gato."
+  },
+  "customisation": {
+    "intro": "Fale-nos do seu gato",
+    "fur_pattern": "Qual é o padrão de pelagem do seu gato?",
+    "fur_options": [
+      "Preto e branco",
+      "Laranja",
+      "Branco",
+      "Preto",
+      "Cinzento",
+      "Tigrado",
+      "Tricolor",
+      "Siamês",
+      "Tortie"
+    ],
+    "name_prompt": "Como se chama o seu gato?",
+    "name_tooltip": "Nome",
+    "age_prompt": "Quantos anos tem?",
+    "age_tooltip": "Idade (em anos)",
+    "weight_prompt": "Quanto pesa?",
+    "weight_tooltip": "Peso (em kg)",
+    "pregnancy_prompt": "Está gestante ou lactante?",
+    "pregnancy_options": [
+      "Sim",
+      "Não"
+    ],
+    "intro_name": "Aqui está o/a",
+    "confirm": "Confirmar"
+  },
+  "questions": {
+    "start": "Iniciar avaliação",
+    "back": "Voltar",
+    "chirp": "Prrrrrr!",
+    "intro": "Vêm aí algumas questões importantes sobre mim. Por favor, responda com a maior precisão possível.",
+    "outdoor": " O/A [CAT NAME] tem acesso ao exterior?",
+    "outdoor_options": [
+      "Sim",
+      "Não",
+      "é um gato exclusivamente de interior"
+    ],
+    "outdoor_warning": "Atenção aos sapatos cheios de lama!",
+    "other_pets": " O/A [CAT NAME] vive com outros animais de estimação que saem de casa?",
+    "other_pets_options": [
+      "Sim",
+      "Não"
+    ],
+    "other_pets_warning": "Os animais com acesso à rua podem trazer parasitas para dentro de casa.",
+    "balcony_access": " O/A [CAT NAME] tem acesso a uma varanda, jardim ou terraço?",
+    "balcony_access_options": [
+      "Sim",
+      "Não"
+    ],
+    "balcony_warning": "Qualquer ida ao exterior pode aumentar o risco de uma infeção parasitária. Peça mais informações ao seu veterinário.",
+    "hunting": " O/A [CAT NAME] caça e come o que apanha (em vez de apenas brincar com as presas)?",
+    "hunting_options": [
+      "Sim – habitualmente",
+      "(na maioria das semanas!)",
+      "Sim",
+      "por vezes",
+      "Muito raramente",
+      "Nunca"
+    ],
+    "hunting_warning": "Roedores e outros animais selvagens podem transportar parasitas.",
+    "raw_meat": " O/A [CAT NAME] come carne crua?",
+    "raw_meat_options": [
+      "Sim",
+      "Não"
+    ],
+    "raw_meat_warning": "Comer carne crua pode aumentar o risco de infeção por parasitas",
+    "household_risk": "Há alguém no seu agregado familiar com menos de 5 anos ou imunodeprimido?",
+    "household_risk_options": [
+      "Sim",
+      "Não"
+    ],
+    "household_warning": "Se alguém no seu agregado familiar se encontrar numa circunstância especial, fale com o seu veterinário."
+  },
+  "treatment": {
+    "treatment_heading": "Rrrrincrível! Agora, falemos sobre o meu tratamento contra parasitas",
+    "protection_type": "Que tipo de proteção contra parasitas utiliza o/a [CAT NAME]?",
+    "protection_options": [
+      "Apenas tratamento contra pulgas e carraças",
+      "",
+      "Apenas tratamento contra parasitas internos",
+      "",
+      "Ambos",
+      "mas dois tratamentos diferentes",
+      "Tudo-em-um",
+      " amplo espetro para pulgas, carraças e parasitas internos",
+      "Nada",
+      "Não sei"
+    ],
+    "options_risk_worms": "O seu gato pode estar em risco de apanhar parasitas internos. Fale com o seu veterinário para mais informações.",
+    "options_risk_fleas": "O seu gato pode estar em risco de apanhar pulgas e carraças. Fale com o seu veterinário para mais informações.",
+    "options_risk_parasites": "O seu gato pode estar em risco de apanhar parasitas. Fale com o seu veterinário para mais informações.{",
+    "options_risk_dontknow": "Fale com o seu veterinário sobre a proteção contra parasitas que utiliza atualmente",
+    "treatment_frequency": "Com que frequência é que o/a [CAT NAME] recebe tratamento contra parasitas?",
+    "frequency_options": [
+      "1-3 vezes por ano",
+      "4 vezes por ano",
+      "5-11 vezes por ano",
+      "12 vezes ou mais"
+    ],
+    "treatment_frequency_worms": "Com que frequência é que o/a  [CAT NAME] recebe tratamento contra parasitas internos?",
+    "treatment_frequency_fleas": "Com que frequência é que o/a [CAT NAME] recebe tratamento contra pulgas e carraças?",
+    "preferred_treatment": "Quantas vezes é que gostaria de aplicar um tratamento contra parasitas no/a [CAT NAME]?",
+    "preferred_frequency": [
+      "Trimestralmente",
+      "Mensalmente"
+    ],
+    "preferred_product": "Que tipo de produto contra parasitas gostaria mais de usar no/a [CAT NAME]?",
+    "product_options": [
+      "Pipeta",
+      "   ",
+      "Comprimidos"
+    ]
+  },
+  "experience_end": {
+    "perfect": "Perrrrfeito! ",
+    "thank-you": "Obrigado pelas respostas! Tire-me uma fotografia bonita utilizando o botão abaixo para gerar os resultados. Depois, é só partilhá-los com o veterinário!",
+    "save_options": [
+      "GUARDE OS RESULTADOS E PARTILHE-OS COM O VETERINÁRIO",
+      "Guardar resultados nas fotografias",
+      "Criar outro perfil de risco"
+    ],
+    "save_camera_roll": "Guardar resultados nas fotografias",
+    "create_another_profile": "Criar outro perfil de risco",
+    "save_and_share_photo": "Guardar e partilhar a foto do seu gato",
+    "final_instructions": [
+      "Os resultados ficarão guardados na pasta de fotografias.",
+      "POR FAVOR, PARTILHE-OS COM O VETERINÁRIO.",
+      " Se tem mais do que um gato, por favor, repita o CatCheck para cada um, utilizando o botão abaixo."
+    ]
+  },
+  "results": {
+    "bio": "Bio",
+    "age": "Idade",
+    "weight": "Peso",
+    "pregnant": "Gestante/ lactante",
+    "esccap": "Risco definido pela ESCCAP:",
+    "risk_profile": "Nível de Risco",
+    "risks": [
+      "Baixo",
+      "Moderado",
+      "Alto"
+    ],
+    "environment": "AMBIENTE",
+    "behaviour": "COMPORTAMENTO",
+    "household": "CASA",
+    "low_risk": [
+      "Sem acesso ao exterior",
+      "Sem acesso à varanda",
+      "Nada de carne crua",
+      "Não caça nem come animais capturados",
+      "Não vive com animais com acesso à rua",
+      "Casa de baixo risco"
+    ],
+    "medium_risk": [
+      "Acesso ao exterior",
+      "Come carne crua",
+      "Acesso à varanda",
+      "Vive com animais com acesso à rua",
+      "Caça ocasionalmente"
+    ],
+    "high_risk": [
+      "Casa de alto risco",
+      "Caça semanalmente"
+    ]
+  }
+}

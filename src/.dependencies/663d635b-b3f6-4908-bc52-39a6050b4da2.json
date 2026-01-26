@@ -1,0 +1,47 @@
+{
+  "type": "module",
+  "dependencyId": "145e8c26-f7fa-40af-a04e-2a0746ad3610",
+  "moduleId": "c792a3ed-c20b-4bcc-a412-f5138fc2e092",
+  "alias": "felpreva-backend",
+  "target": {
+    "type": "commit",
+    "branch": "master",
+    "commit": "0a70930ae851bbfb2e0d3dce78a7d904cfc050f7"
+  },
+  "backendSlotValues": {
+    "b4151588-f9f6-4ce2-be2b-516a0ac1a1e7": {
+      "type": "literal",
+      "value": "https://felpreva-dashboard-mjnb8.ondigitalocean.app"
+    },
+    "0f68a818-1e26-421c-9cb0-d8bc752f7909": {
+      "type": "literal",
+      "value": "f2cadcdd2a81cffbd1ccd13d5091e9eef9461f6d5f2e2a4c2bc1e5991c86bb9b"
+    },
+    "d2a04208-79c4-4fc5-ad4e-ce6535c7c761": {
+      "type": "literal",
+      "value": "https://felpreva-dashboard-mjnb8.ondigitalocean.app/felpreva-dashboard-backend/api/entries"
+    }
+  },
+  "backendTemplates": [
+    {
+      "type": "function",
+      "entry": "backend/submitSession.ts",
+      "headers": {},
+      "envVariables": {
+        "API_URL": {
+          "type": "literalslot",
+          "slotId": "d2a04208-79c4-4fc5-ad4e-ce6535c7c761",
+          "label": "API_URL"
+        },
+        "BACKEND_SECRET": {
+          "type": "literalslot",
+          "slotId": "0f68a818-1e26-421c-9cb0-d8bc752f7909",
+          "label": "BACKEND_SECRET"
+        }
+      },
+      "title": "felpreva-backend",
+      "description": "",
+      "name": "felpreva-backend"
+    }
+  ]
+}

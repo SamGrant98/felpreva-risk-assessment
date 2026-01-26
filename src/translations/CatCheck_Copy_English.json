@@ -1,0 +1,199 @@
+{
+  "launch": {
+    "welcome": "Welcome to CatCheck",
+    "motion_access": "“URL_TBD” would Like to access Motion and Orientation",
+    "loading": "LOADING…",
+    "start": "TAP TO START",
+    "rotate": "ROTATE YOUR SCREEN",
+    "camera_access": "“CatCheck.com” would like to Access the Camera"
+  },
+  "ui_labels": {
+    "cancel": "Cancel",
+    "allow": "Allow",
+    "skip": "Skip"
+  },
+  "placement": {
+    "find_spot": "Find the purr-fect spot Tap to Place",
+    "pinch_to_scale": "Pinch to scale",
+    "permission_warning_heading": "Cookies & Analytics! ",
+    "permission_warning": "We use cookies to measure usage and improve the AR experience. You can accept or decline analytics cookies.",
+    "permission_options": [
+      "Accept",
+      "Decline"
+    ],
+    "sound_warning_heading": "Meooowwwww! ",
+    "sound_warning": "This risk assessor features animal sounds, please plug in headphones or turn down the volume to avoid disturbing others.",
+    "sound_options": [
+      "With sound",
+      "Without sound"
+    ],
+    "multiple_cat": "If you have a multiple cat household, please save your results at the end and repeat this assessment for each cat"
+  },
+  "customisation": {
+    "intro": "Tell us about your cat",
+    "fur_pattern": "What fur pattern is your cat?",
+    "fur_options": [
+      "Tuxedo",
+      "Ginger",
+      "White",
+      "Black",
+      "Grey",
+      "Tabby",
+      "Calico",
+      "Point",
+      "Tortoiseshell"
+    ],
+    "name_prompt": "What is your cats name?",
+    "name_tooltip": "Name",
+    "age_prompt": "How old are they?",
+    "age_tooltip": "Age (in years)",
+    "weight_prompt": "How much do they weigh?",
+    "weight_tooltip": "Weight (in kg)",
+    "pregnancy_prompt": "Are they pregnant or lactating?",
+    "pregnancy_options": [
+      "Yes",
+      "No"
+    ],
+    "intro_name": "Introducing",
+    "confirm": "CONFIRM"
+  },
+  "questions": {
+    "start": "Start Assessment",
+    "back": "BACK",
+    "chirp": "Chiirrrpppp! ",
+    "intro": "Now for some important questions about me. Please answer as accurately as possible.",
+    "outdoor": "Does [CAT NAME] go outside in nature?",
+    "outdoor_options": [
+      "Yes",
+      "No",
+      "indoor only cat"
+    ],
+    "outdoor_warning": "Watch out for muddy shoes!",
+    "other_pets": "Does [CAT NAME] live with any other pets that go outside?",
+    "other_pets_options": [
+      "Yes",
+      "No"
+    ],
+    "other_pets_warning": "Outdoor pets can bring parasites into the home.",
+    "balcony_access": "Does [CAT NAME] have access to a balcony, garden or patio?",
+    "balcony_access_options": [
+      "Yes",
+      "No"
+    ],
+    "balcony_warning": "Any outdoor access can raise the risk of parasite infection, ask your vet for more information.",
+    "hunting": "Does [CAT NAME] hunt and eat prey (rather than just play with it)?",
+    "hunting_options": [
+      "Yes regularly",
+      "(most weeks!)",
+      "Yes",
+      "sometimes",
+      "Very rarely",
+      "Never"
+    ],
+    "hunting_warning": "Rodents and other wildlife can carry parasites",
+    "raw_meat": "Does [CAT NAME] eat raw meat?",
+    "raw_meat_options": [
+      "Yes",
+      "No"
+    ],
+    "raw_meat_warning": "Eating raw meat can raise the risk of parasite infection",
+    "household_risk": "Is anyone in your household under the age of 5, or immunosuppressed?",
+    "household_risk_options": [
+      "Yes",
+      "No"
+    ],
+    "household_warning": "If anyone in your household does have a special circumstance, please speak to your vet"
+  },
+  "treatment": {
+    "treatment_heading": "Pawsome! Now let’s talk about my parasite treatment",
+    "protection_type": "What type of parasite protection do you use on [CAT NAME]?",
+    "protection_options": [
+      "Flea & tick",
+      "treatment only",
+      "Wormer",
+      "treatment only",
+      "Both",
+      "but as two separate treatments",
+      "All-in-one",
+      "broad spectrum for fleas, ticks and worms",
+      "None",
+      "Don’t know"
+    ],
+    "options_risk_worms": "Your cat could be at risk of contracting worms, ask your vet for more information.",
+    "options_risk_fleas": "Your cat could be at risk of contracting fleas & ticks, ask your vet for more information.",
+    "options_risk_parasites": "Your cat could be at risk of contracting parasites, ask your vet for more information.",
+    "options_risk_dontknow": "Please talk to your vet about what parasite protection you currently use",
+    "treatment_frequency": "How often do you treat [CAT NAME] for parasites?",
+    "frequency_options": [
+      "1-3 times a year",
+      "4 times a year",
+      "5-11 times a year",
+      "12 times or more"
+    ],
+    "treatment_frequency_worms": "How often do you treat [CAT NAME] for worms?",
+    "treatment_frequency_fleas": "How often do you treat [CAT NAME] for fleas & ticks?",
+    "preferred_treatment": "How often would you prefer to treat [CAT NAME] for parasites?",
+    "preferred_frequency": [
+      "Quarterly",
+      "Monthly"
+    ],
+    "preferred_product": "What type of parasite product would you prefer to use on [CAT NAME]?",
+    "product_options": [
+      "Spot-on",
+      "(drops onto the skin)",
+      "Tablet"
+    ]
+  },
+  "experience_end": {
+    "perfect": "Puuurrrrfect!",
+    "thank-you": "Thanks for answering! Snap a cute photo of me using the button below to generate my results. Then please share them with my vet!",
+    "save_options": [
+      "SAVE RESULTS AND SHARE WITH YOUR VET",
+      "Save results to camera roll",
+      "Create another risk profile"
+    ],
+    "save_camera_roll": "Save results to camera roll",
+    "create_another_profile": "Create another risk profile",
+    "save_and_share_photo": "Save & share your cat photo",
+    "final_instructions": [
+      "Your results should be saved in your camera roll.",
+      "PLEASE SHARE WITH YOUR VET",
+      "If you have more than one cat, please complete the experience again for them using the button below."
+    ]
+  },
+  "results": {
+    "bio": "Bio",
+    "age": "Age",
+    "weight": "Weight",
+    "pregnant": "Pregnant/Lactating",
+    "esccap": "ESCCAP Risk:",
+    "risk_profile": "Risk Level",
+    "risks": [
+      "Lower",
+      "Moderate",
+      "Higher Risk"
+    ],
+    "environment": "ENVIRONMENT",
+    "behaviour": "BEHAVIOUR",
+    "household": "HOUSEHOLD",
+    "low_risk": [
+      "No outdoor access",
+      "No balcony access",
+      "No raw meat",
+      "Doesn’t hunt and eat prey regularly",
+      "Doesn’t live with outdoor pets",
+      "Lower risk household"
+    ],
+    "medium_risk": [
+      "Outdoor access",
+      "Eats raw meat",
+      "Balcony access",
+      "Lives with outdoor pets",
+      "Sometimes hunts"
+    ],
+    "high_risk": [
+      "High risk household",
+      "Weekly hunter"
+    ]
+  }
+}

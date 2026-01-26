@@ -1,0 +1,193 @@
+{
+  "launch": {
+    "welcome": "Willkommen bei CatCheck",
+    "motion_access": "“URL_TBD” möchte auf „Bewegung“ und „Ausrichtung“ zugreifen",
+    "loading": "",
+    "start": "Tippen zum Starten",
+    "rotate": "Drehen Sie Ihren Bildschirm",
+    "camera_access": "“CatCheck.com” möchte auf deine Kamera zugreifen"
+  },
+  "ui_labels": {
+    "cancel": "Abbrechen",
+    "allow": "Erlauben",
+    "skip": "Überspringen"
+  },
+  "placement": {
+    "find_spot": "Finde schnurrr-straks den perfekten Ort Tippen zum Auswählen",
+    "pinch_to_scale": "Zum Zoomen zusammenziehen",
+    "sound_warning_heading": "Miaaaaaauuuuu!",
+    "sound_warning": "Dieser Risiko-Checker arbeitet mit Katzenlauten. Bitte schließe Kopfhörer an oder stelle dein Gerät leise, um niemanden zu stören.",
+    "sound_options": [
+      "Mit Sound",
+      "Ohne Sound"
+    ],
+    "multiple_cat": "Du hast mehrere Katzen? Bitte führe den Check für jede Katze einzeln durch und sichere jeweils die Ergebnisse."
+  },
+  "customisation": {
+    "intro": "Stell uns deine Katze vor",
+    "fur_pattern": "Welches Fellmuster hat Ihre Katze?",
+    "fur_options": [
+      "Schwarz-Weiß",
+      "Rötlich",
+      "Weiß",
+      "Schwarz",
+      "Grau",
+      "Getigert",
+      "Dreifarbig",
+      "Point",
+      "Schildpatt"
+    ],
+    "name_prompt": "Wie heißt deine Katze?",
+    "name_tooltip": "Name",
+    "age_prompt": "Wie alt ist deine Katze?",
+    "age_tooltip": "Alter (in Jahren)",
+    "weight_prompt": "Wie viel wiegt deine Katze?",
+    "weight_tooltip": "Gewicht (in kg)",
+    "pregnancy_prompt": "Ist sie trächtig oder säugend?",
+    "pregnancy_options": [
+      "Ja",
+      "Nein"
+    ],
+    "intro_name": "Hier ist",
+    "confirm": "Bestätigen"
+  },
+  "questions": {
+    "start": "Bewertung starten",
+    "back": "Zurück",
+    "chirp": "Mauuuuuuunz! ",
+    "intro": "Bereit für ein paar wichtige Fragen über mich? Bitte beantworte sie so genau wie möglich.",
+    "outdoor": "Geht [CAT NAME] nach draußen in die Natur?",
+    "outdoor_options": [
+      "Ja",
+      "Nein",
+      "sie bleibt nur drinnen"
+    ],
+    "outdoor_warning": "Vorsicht vor schmutzigen Schuhen!",
+    "other_pets": "Lebt [CAT NAME] mit anderen Haustieren zusammen, die nach draußen gehen?",
+    "other_pets_options": [
+      "Ja",
+      "Nein"
+    ],
+    "other_pets_warning": "Haustiere mit Zugang nach draußen können Parasiten oder infektiöse Parasiteneier ins Haus tragen.",
+    "balcony_access": "Hat [CAT NAME] Zugang zu einem Balkon, Garten oder einer Terrasse?",
+    "balcony_access_options": [
+      "Ja",
+      "Nein"
+    ],
+    "balcony_warning": "Jeder Auslauf ins Freie kann das Risiko einer Parasiteninfektion erhöhen; frag in deiner tierärztlichen Praxis nach.",
+    "hunting": "Jagt und frisst [CAT NAME] Beutetiere (anstatt nur mit ihnen zu spielen)?",
+    "hunting_options": [
+      "Ja – regelmäßig",
+      "(fast jede Woche!)",
+      "Ja",
+      "gelegentlich",
+      "Sehr selten",
+      "Nie"
+    ],
+    "hunting_warning": "Nagetiere und andere Wildtiere können Parasiten übertragen.",
+    "raw_meat": "Frisst [CAT NAME] rohes Fleisch?",
+    "raw_meat_options": [
+      "Ja",
+      "Nein"
+    ],
+    "raw_meat_warning": "Der Verzehr von rohem Fleisch kann das Risiko einer Parasiteninfektion erhöhen.",
+    "household_risk": "Lebt in deinem Haushalt jemand, der jünger als 5 Jahre alt ist oder eine Immunschwäche hat?",
+    "household_risk_options": [
+      "Ja",
+      "Nein"
+    ],
+    "household_warning": "Falls jemand besondere gesundheitliche Einschränkungen hat, lass dich bitte von deiner tierärztlichen Praxis beraten."
+  },
+  "treatment": {
+    "treatment_heading": "Pfot-tastisch! Jetzt kommen wir zu meiner Parasitenbehandlung.",
+    "protection_type": "Welche Art von Parasitenschutz bekommt [CAT NAME]?",
+    "protection_options": [
+      "Wird nur gegen Flöhe und Zecken behandelt ",
+      "",
+      "Wird nur entwurmt  ",
+      "",
+      "Beides",
+      "als zwei separate Behandlungen",
+      "Rundumschutz",
+      "Breitbandmittel gegen Flöhe, Zecken und Würmer",
+      "Keinen",
+      "Weiß nicht"
+    ],
+    "options_risk_worms": "Deine Katze könnte Würmer bekommen; frag in deiner tierärztlichen Praxis nach.",
+    "options_risk_fleas": "Deine Katze könnte Flöhe und Zecken bekommen; frag in deiner tierärztlichen Praxis nach.",
+    "options_risk_parasites": "Deine Katze könnte Parasiten bekommen; frag in deiner tierärztlichen Praxis nach.",
+    "options_risk_dontknow": "Bitte frag in deiner tierärztlichen Praxis nach, welcher Schutz aktuell vorliegt.",
+    "treatment_frequency": "Wie oft wird [CAT NAME] gegen Parasiten behandelt?",
+    "frequency_options": [
+      "1–3 Mal im Jahr",
+      "4 Mal im Jahr",
+      "5–11 Mal im Jahr",
+      "12 Mal oder öfter"
+    ],
+    "treatment_frequency_worms": "Wie oft wird [CAT NAME] gegen Würmer behandelt?",
+    "treatment_frequency_fleas": "Wie oft wird [CAT NAME] gegen Flöhe und Zecken behandelt?",
+    "preferred_treatment": "Wie oft möchtest du [CAT NAME] gegen Parasiten behandeln?",
+    "preferred_frequency": [
+      "Vierteljährlich",
+      "Monatlich"
+    ],
+    "preferred_product": "Welche Art von Parasitenschutz soll [CAT NAME] bekommen?",
+    "product_options": [
+      "Spot-on",
+      " (im Nacken auf die Haut getropft)",
+      "Tablette"
+    ]
+  },
+  "experience_end": {
+    "perfect": "Grrrrrrrroßartig!",
+    "thank-you": "Danke fürs Beantworten! Tippe auf den Button unten, um ein knuffiges Foto von mir zu machen und meine Ergebnisse zu erhalten. Bitte teile sie dann mit unserer tierärztlichen Praxis!",
+    "save_options": [
+      "SICHERE DIE ERGEBNISSE UND TEILE SIE MIT DEINER TIERÄRZTLICHEN PRAXIS",
+      "Ergebnisse in „Fotos“ sichern",
+      "Ein weiteres Katzenprofil erstellen"
+    ],
+    "save_camera_roll": "Ergebnisse in „Fotos“ sichern",
+    "create_another_profile": "Ein weiteres Katzenprofil erstellen",
+    "save_and_share_photo": "Katzenfoto sichern und teilen",
+    "final_instructions": [
+      "Deine Ergebnisse wurden in deinen Fotos gesichert.",
+      "BITTE TEILE SIE MIT DEINER TIERÄRZTLICHEN PRAXIS",
+      "Du hast mehr als eine Katze? Tippe auf den Button unten, um einen weiteren Check durchzuführen."
+    ]
+  },
+  "results": {
+    "bio": "Bio",
+    "age": "Alter",
+    "weight": "Gewicht",
+    "pregnant": "Trächtig/Säugend",
+    "esccap": "ESCCAP-Risiko:",
+    "risk_profile": "Risikostufe",
+    "risks": [
+      "Niedrigeres",
+      "Mittleres",
+      "Höheres Risiko"
+    ],
+    "environment": "UMGEBUNG",
+    "behaviour": "VERHALTEN",
+    "household": "HAUSHALT",
+    "low_risk": [
+      "Kein Auslauf ins Freie",
+      "Kein Zugang zum Balkon",
+      "Kein rohes Fleisch",
+      "Jagt und frisst nicht regelmäßig Beutetiere",
+      "Lebt nicht mit anderen Haustieren, die Auslauf ins Freie haben",
+      "Haushalt mit niedrigerem Risiko"
+    ],
+    "medium_risk": [
+      "Auslauf ins Freie",
+      "Frisst rohes Fleisch",
+      "Zugang zum Balkon",
+      "Andere Haustiere mit Auslauf ins Freie",
+      "Jagt gelegentlich"
+    ],
+    "high_risk": [
+      "Haushalt mit hohem Risiko",
+      "Jagt wöchentlich"
+    ]
+  }
+}

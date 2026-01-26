@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.51 26.31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: CoconPro-Bold, CoconPro;
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: .02em;
+      }
+
+      .cls-2 {
+        fill: #ff378c;
+      }
+    </style>
+  </defs>
+  <g id="logo">
+    <g>
+      <circle class="cls-2" cx="12.75" cy="12.75" r="12.75"/>
+      <text class="cls-1" transform="translate(5.07 20.2)"><tspan x="0" y="0">X</tspan></text>
+    </g>
+  </g>
+</svg>

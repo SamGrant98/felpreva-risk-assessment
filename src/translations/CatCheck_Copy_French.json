@@ -1,0 +1,193 @@
+{
+  "launch": {
+    "welcome": "Bienvenue sur CatCheck",
+    "motion_access": "“URL_TBD” souhaite accéder aux fonctions de mouvement et d’orientation.",
+    "loading": "",
+    "start": "Appuyez pour commencer",
+    "rotate": "Faites pivoter votre écran",
+    "camera_access": "“CatCheck.com” souhaite accéder à l’appareil photo."
+  },
+  "ui_labels": {
+    "cancel": "Annuler",
+    "allow": "Autoriser",
+    "skip": "Passer"
+  },
+  "placement": {
+    "find_spot": "Trouvez l’endroit idéal. Appuyez pour placer votre chat.",
+    "pinch_to_scale": "Pincez pour zoomer",
+    "sound_warning_heading": "Miaouuuuuuuu!",
+    "sound_warning": "Cette application émet des sons d’animaux. Veuillez mettre un casque ou baisser le volume pour ne pas déranger votre entourage.",
+    "sound_options": [
+      "Son activé ",
+      "Son désactivé"
+    ],
+    "multiple_cat": "Si vous possédez plusieurs chats, enregistrez vos résultats à la fin et recommencez l’évaluation pour chaque chat."
+  },
+  "customisation": {
+    "intro": "Parlez-nous de votre chat",
+    "fur_pattern": "Quelle est la couleur de votre chat?",
+    "fur_options": [
+      "Bicolore (noir et banc)",
+      "Roux",
+      "Blanc",
+      "Noir",
+      "Gris",
+      "Tabby (tigré)",
+      "Tricolore",
+      "Point ",
+      "Écaille de tortue"
+    ],
+    "name_prompt": "Comment s’appelle votre chat?",
+    "name_tooltip": "Nom",
+    "age_prompt": "Quel âge a-t-il?",
+    "age_tooltip": "Âge (en années)",
+    "weight_prompt": "Combien pèse-t-il?",
+    "weight_tooltip": "Poids (en kg)",
+    "pregnancy_prompt": "Si c’est une femelle, est-elle gestante ou allaitante?",
+    "pregnancy_options": [
+      "Oui",
+      "Non"
+    ],
+    "intro_name": "Voici",
+    "confirm": "Confirmer"
+  },
+  "questions": {
+    "start": "Commencer l’évaluation.",
+    "back": "Retour",
+    "chirp": "Psstpsst!",
+    "intro": "Passons maintenant à quelques questions importantes. Veuillez y répondre le plus précisément possible.",
+    "outdoor": "[CAT NAME] a-t-il accès à l’extérieur ?",
+    "outdoor_options": [
+      "Oui",
+      "Non",
+      "chat exclusivement d’intérieur"
+    ],
+    "outdoor_warning": "Attention aux chaussures pleines de boue!",
+    "other_pets": "[CAT NAME] cohabite-t-il avec d’autres animaux de compagnie qui ont accès à l’extérieur?",
+    "other_pets_options": [
+      "Oui",
+      "Non"
+    ],
+    "other_pets_warning": "Les animaux de compagnie ayant accès à l’extérieur peuvent ramener des parasites à la maison.",
+    "balcony_access": "[CAT NAME] a-t-il accès à un balcon, un jardin ou une terrasse?",
+    "balcony_access_options": [
+      "Oui",
+      "Non"
+    ],
+    "balcony_warning": "Tout accès à l’extérieur peut augmenter le risque d’infestation parasitaire. Consultez votre vétérinaire pour plus d’informations.",
+    "hunting": "[CAT NAME] chasse-t-il et mange-t-il ses proies (au lieu de simplement jouer avec)?",
+    "hunting_options": [
+      "Oui - régulièrement",
+      "(presque chaque semaine!)",
+      "Oui",
+      "parfois",
+      "Très rarement",
+      "Jamais"
+    ],
+    "hunting_warning": "Les rongeurs et autres animaux sauvages peuvent être porteurs de parasites.",
+    "raw_meat": "[CAT NAME] mange-t-il de la viande crue?",
+    "raw_meat_options": [
+      "Oui",
+      "Non"
+    ],
+    "raw_meat_warning": "La consommation de viande crue peut augmenter le risque d’infestation parasitaire.",
+    "household_risk": "Un membre de votre foyer est-il âgé de moins de 5 ans ou immunodéprimé?",
+    "household_risk_options": [
+      "Oui",
+      "Non"
+    ],
+    "household_warning": "Si l’un des membres de votre foyer présente un état de santé particulier, veuillez en parler à votre vétérinaire."
+  },
+  "treatment": {
+    "treatment_heading": "Chabuleux! Parlons maintenant du traitement antiparasitaire.",
+    "protection_type": "Quel type d’antiparasitaire utilisez-vous [CAT NAME]?",
+    "protection_options": [
+      "Uniquement un traitement contre les puces et les tiques",
+      "",
+      "Uniquement un traitement contre les vers",
+      "",
+      "Les deux",
+      "mais sous forme de deux traitements distincts",
+      "Un produit pour les puces, les tiques et les vers",
+      "",
+      "Aucun",
+      "Je ne sais pas"
+    ],
+    "options_risk_worms": "Votre chat pourrait être infesté par des vers. Demandez plus d’informations à votre vétérinaire.",
+    "options_risk_fleas": "Votre chat pourrait être infesté par  des parasites externes (puces et tiques). Demandez plus d’informations à votre vétérinaire.",
+    "options_risk_parasites": "Votre chat pourrait être infesté par des parasites. Demandez plus d’informations à votre vétérinaire.",
+    "options_risk_dontknow": "Veuillez parler à votre vétérinaire de l’anti-parasitaire que vous utilisez actuellement",
+    "treatment_frequency": "À quelle fréquence traitez-vous [CAT NAME] contre les parasites ?",
+    "frequency_options": [
+      "1 à 3 fois par an",
+      "4 fois par an",
+      "5 à 11 fois par an",
+      "12 fois ou plus par an"
+    ],
+    "treatment_frequency_worms": "À quelle fréquence traitez-vous [CAT NAME] contre les vers?",
+    "treatment_frequency_fleas": "À quelle fréquence traitez-vous [CAT NAME] contre les puces et les tiques?",
+    "preferred_treatment": "À quelle fréquence préféreriez-vous traiter [CAT NAME] contre les parasites?",
+    "preferred_frequency": [
+      "Une fois tous les trois mois",
+      "Une fois par mois"
+    ],
+    "preferred_product": "Quel type de produit antiparasitaire préféreriez-vous utiliser sur [CAT NAME]?",
+    "product_options": [
+      "Pipette",
+      "à appliquer directement sur la peau",
+      "Comprimé"
+    ]
+  },
+  "experience_end": {
+    "perfect": "Senchationnel!",
+    "thank-you": "Merci pour vos réponses! Prenez une adorable photo de moi à l’aide du bouton ci-dessous pour afficher mes résultats. Ensuite, merci de les envoyer à mon vétérinaire!",
+    "save_options": [
+      "ENREGISTREZ LES RÉSULTATS ET PARTAGEZ-LES AVEC VOTRE VÉTÉRINAIRE",
+      "Sauvegarder les résultats dans la galerie des photos",
+      "Créer un nouveau profil de risque"
+    ],
+    "save_camera_roll": "Sauvegarder les résultats dans la galerie des photos",
+    "create_another_profile": "Créer un nouveau profil de risque",
+    "save_and_share_photo": "Enregistrez et partagez la photo de votre chat",
+    "final_instructions": [
+      "Vos résultats devraient apparaître dans votre galerie de photos.",
+      "PARTAGEZ-LES AVEC VOTRE VÉTÉRINAIRE",
+      "Si vous avez plusieurs chats, veuillez recommencer pour chacun d’entre eux à l’aide du bouton ci-dessous."
+    ]
+  },
+  "results": {
+    "bio": "Votre chat",
+    "age": "Âge",
+    "weight": "Poids:",
+    "pregnant": "GESTANTE/ALLAITANTE",
+    "esccap": "Groupe de risque ESCCAP:",
+    "risk_profile": "Risque parasitaire",
+    "risks": [
+      "Faible",
+      "Modéré",
+      "Élevé"
+    ],
+    "environment": "ENVIRONNEMENT",
+    "behaviour": "COMPORTEMENT",
+    "household": "FOYER",
+    "low_risk": [
+      "Pas d’accès à l’extérieur",
+      "Pas d’accès au balcon",
+      "Alimentation sans viande crue",
+      "Ne chasse pas ni ne mange de proies régulièrement",
+      "Ne cohabite pas avec des animaux de compagnie ayant accès à l’extérieur",
+      "Foyer à faible risque"
+    ],
+    "medium_risk": [
+      "Accès à l’extérieur",
+      "Mange de la viande crue",
+      "Accès au balcon",
+      "Cohabite avec des animaux de compagnie ayant accès à l’extérieur",
+      "Chasse parfois"
+    ],
+    "high_risk": [
+      "Foyer à risque élevé",
+      "Chasseur hebdomadaire"
+    ]
+  }
+}
