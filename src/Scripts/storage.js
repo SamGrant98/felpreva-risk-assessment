@@ -1,5 +1,3 @@
-import {submitViaProxy} from 'felpreva-backend'
-
 export const storeData = {
   // =========================
   // Analytics state
@@ -372,30 +370,51 @@ export const storeData = {
       sessionStorage.setItem('cc_session_v1', JSON.stringify(A))
     }
 
-    //this.SendPayload(payload)
+    this.SendPayload(payload)
   },
 
   async SendPayload(payload) {
-    try {
-      // allow multiple partials; only block repeat finals
-      if (localStorage.getItem('cc_submitted_v1') === '1' && payload.completed) {
-        console.warn('Submit skipped: already sent final for this session.')
-        return
-      }
-      const resp = await submitViaProxy('/submit', {
-        method: 'POST',
-        headers: {'content-type': 'application/json'},
-        body: JSON.stringify(payload),
-      })
-      if (!resp.ok) {
-        const errText = await resp.text()
-        throw new Error(`Proxy failed ${resp.status}: ${errText}`)
-      }
-      if (payload.completed) localStorage.setItem('cc_submitted_v1', '1')
-      const data = await resp.text()
-      console.log('✅ Submitted via 8th Wall proxy:', data)
-    } catch (err) {
-      console.error('❌ Error sending data via proxy:', err)
+  try {
+    // allow multiple partials; only block repeat finals
+    if (localStorage.getItem('cc_submitted_v1') === '1' && payload.completed) {
+      console.warn('Submit skipped: already sent final for this session.')
+      return
     }
-  },
+
+    // IMPORTANT: this is the BASE, not the endpoint
+    // Your endpoint is: /felpreva-dashboard-backend/api/entries
+    const API_BASE = window.API_BASE_URL
+
+    const endpoint = `${API_BASE}/felpreva-dashboard-backend/api/entries`;
+
+    // Required by your backend (idempotency)
+    const idemKey = crypto.randomUUID();
+
+    const resp = await fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        'x-idempotency-key': idemKey,
+
+        // Optional: only if you set CLIENT_KEY on the backend
+        // 'x-client-key': window.CLIENT_KEY,
+      },
+      body: JSON.stringify(payload),
+      keepalive: true,
+    });
+
+    if (!resp.ok) {
+      const errText = await resp.text();
+      throw new Error(`API failed ${resp.status}: ${errText}`);
+    }
+
+    if (payload.completed) localStorage.setItem('cc_submitted_v1', '1');
+
+    const text = await resp.text();
+    console.log('✅ Submitted:', text);
+  } catch (err) {
+    console.error('❌ Error sending data:', err);
+  }
+}
+
 }
