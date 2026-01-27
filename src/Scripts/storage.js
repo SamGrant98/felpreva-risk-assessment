@@ -372,7 +372,7 @@ export const storeData = {
       sessionStorage.setItem('cc_session_v1', JSON.stringify(A))
     }
 
-    this.SendPayload(payload)
+    //this.SendPayload(payload)
   },
 
   async SendPayload(payload) {
