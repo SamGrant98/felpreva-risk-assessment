@@ -160,7 +160,7 @@
     "age": "Idade",
     "weight": "Peso",
     "pregnant": "Gestante/ lactante",
-    "esccap": "Risco definido pela ESCCAP:",
+    "esccap": "Risco definido pela ESCCAP: {level}",
     "risk_profile": "Nível de Risco",
     "risks": [
       "Baixo",
@@ -171,22 +171,22 @@
     "behaviour": "COMPORTAMENTO",
     "household": "CASA",
     "low_risk": [
-      "Sem acesso ao exterior",
+      "Gato de interior",
       "Sem acesso à varanda",
-      "Nada de carne crua",
+      "Não come carne crua",
       "Não caça nem come animais capturados",
       "Não vive com animais com acesso à rua",
-      "Casa de baixo risco"
+      "Não convive com pessoas de risco"
     ],
     "medium_risk": [
-      "Acesso ao exterior",
+      "Acesso ilimitado ao exterior",
       "Come carne crua",
       "Acesso à varanda",
       "Vive com animais com acesso à rua",
       "Caça ocasionalmente"
     ],
     "high_risk": [
-      "Casa de alto risco",
+      "Convive com pessoas de risco",
       "Caça semanalmente"
     ]
   }

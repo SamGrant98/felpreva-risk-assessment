@@ -178,17 +178,17 @@ const reportComponent = {
     const language = getLanguage()
     const translations = translationsMap[language]
 
-
     const ageValue = Number(localStorage.getItem('age'))
 
     // const ageUnit =
-    //   ageValue === 1 ? translations.results.ageUnitSingular : translations.results.ageUnitPlural
+    // ageValue === 1 ? translations.results.ageUnitSingular : translations.results.ageUnitPlural
 
     // age.textContent = `${translations.results.age}: ${ageValue} ${ageUnit}`
 
-    age.textContent = `Age: ${ageValue}`
-
-    weight.textContent = `Weight: ${localStorage.getItem('weight')} kg`
+    // age.textContent = `Age: ${ageValue}`
+    age.textContent = `${translations.results.age}: ${ageValue}`
+    
+    weight.textContent = `${translations.results.weight}: ${localStorage.getItem('weight')} kg`
 
     if (localStorage.getItem('pregnancy') === 'no') {
       pregnancy.classList.add('hidden-pregnancy')
@@ -215,7 +215,8 @@ const reportComponent = {
     }
 
     const displayRiskLevel = this.riskLevel === 'C' ? 'B' : this.riskLevel
-    esccap.textContent += ` ${displayRiskLevel}`
+    // esccap.textContent += ` ${displayRiskLevel}`
+    esccap.textContent = esccap.textContent.replace('{level}', displayRiskLevel)
     
     switch (this.riskLevel) {
       case 'A':

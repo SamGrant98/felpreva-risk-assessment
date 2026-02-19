@@ -166,7 +166,7 @@
     "age": "Age",
     "weight": "Weight",
     "pregnant": "Pregnant/Lactating",
-    "esccap": "ESCCAP Risk:",
+    "esccap": "ESCCAP Risk: {level}",
     "risk_profile": "Risk Level",
     "risks": [
       "Lower",

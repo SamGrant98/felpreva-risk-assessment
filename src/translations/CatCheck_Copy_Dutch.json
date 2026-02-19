@@ -160,7 +160,7 @@
     "age": "Leeftijd",
     "weight": "Gewicht",
     "pregnant": "Zwanger/Zogend",
-    "esccap": "ESCCAP Risico:",
+    "esccap": "ESCCAP Risico: {level}",
     "risk_profile": "Risiconiveau",
     "risks": [
       "Lager",

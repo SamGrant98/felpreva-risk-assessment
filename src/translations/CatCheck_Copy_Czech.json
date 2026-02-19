@@ -160,7 +160,7 @@
     "age": "Věk",
     "weight": "Váha",
     "pregnant": "Březí / krmí koťata",
-    "esccap": "ESCCAP riziko",
+    "esccap": "ESCCAP riziko: {level}",
     "risk_profile": "Úroveň rizika",
     "risks": [
       "Nízké",

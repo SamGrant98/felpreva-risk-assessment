@@ -69,7 +69,7 @@
       "Nein"
     ],
     "other_pets_warning": "Haustiere mit Zugang nach draußen können Parasiten oder infektiöse Parasiteneier ins Haus tragen.",
-    "balcony_access": "Hat [CAT NAME] Zugang zu einem Balkon, Garten oder einer Terrasse?",
+    "balcony_access": "Hat [CAT NAME] Zugang zu einem nicht eingezäunten Balkon, Garten oder einer Terrasse?",
     "balcony_access_options": [
       "Ja",
       "Nein"
@@ -143,7 +143,7 @@
     "thank-you": "Danke fürs Beantworten! Tippe auf den Button unten, um ein knuffiges Foto von mir zu machen und meine Ergebnisse zu erhalten. Bitte teile sie dann mit unserer tierärztlichen Praxis!",
     "save_options": [
       "SICHERE DIE ERGEBNISSE UND TEILE SIE MIT DEINER TIERÄRZTLICHEN PRAXIS",
-      "Ergebnisse in „Fotos“ sichern",
+      "Ergebnisse in Fotos sichern",
       "Ein weiteres Katzenprofil erstellen"
     ],
     "save_camera_roll": "Ergebnisse in „Fotos“ sichern",
@@ -160,7 +160,7 @@
     "age": "Alter",
     "weight": "Gewicht",
     "pregnant": "Trächtig/Säugend",
-    "esccap": "ESCCAP-Risiko:",
+    "esccap": "ESCCAP-Risiko: {level}",
     "risk_profile": "Risikostufe",
     "risks": [
       "Niedrigeres",
@@ -172,7 +172,7 @@
     "household": "HAUSHALT",
     "low_risk": [
       "Kein Auslauf ins Freie",
-      "Kein Zugang zum Balkon",
+      "Kein Zugang zu offenem Balkon",
       "Kein rohes Fleisch",
       "Jagt und frisst nicht regelmäßig Beutetiere",
       "Lebt nicht mit anderen Haustieren, die Auslauf ins Freie haben",
@@ -181,7 +181,7 @@
     "medium_risk": [
       "Auslauf ins Freie",
       "Frisst rohes Fleisch",
-      "Zugang zum Balkon",
+      "Zugang zu offenem Balkon",
       "Andere Haustiere mit Auslauf ins Freie",
       "Jagt gelegentlich"
     ],

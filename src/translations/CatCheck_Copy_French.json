@@ -160,7 +160,7 @@
     "age": "Âge",
     "weight": "Poids:",
     "pregnant": "GESTANTE/ALLAITANTE",
-    "esccap": "Groupe de risque ESCCAP:",
+    "esccap": "Groupe de risque ESCCAP: {level}",
     "risk_profile": "Risque parasitaire",
     "risks": [
       "Faible",

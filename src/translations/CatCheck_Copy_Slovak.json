@@ -160,7 +160,7 @@
     "age": "Vek",
     "weight": "Hmotnosť",
     "pregnant": "Gravidná / kŕmi mačiatka",
-    "esccap": "ESCCAP riziko",
+    "esccap": "ESCCAP riziko: {level}",
     "risk_profile": "Úroveň rizika",
     "risks": [
       "Nízke",

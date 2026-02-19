@@ -160,7 +160,7 @@
     "age": "Edad",
     "weight": "Peso",
     "pregnant": "Preñada o lactante",
-    "esccap": "Riesgo ESCCAP:",
+    "esccap": "Riesgo ESCCAP: {level}",
     "risk_profile": "Nivel de riesgo",
     "risks": [
       "Riesgo Bajo",
@@ -171,22 +171,22 @@
     "behaviour": "COMPORTAMIENTO",
     "household": "HOGAR",
     "low_risk": [
-      "Sin acceso al exterior",
+      "Vive en el interior",
       "Sin acceso al balcón",
       "No consume carne cruda",
       "No caza ni come presas habitualmente",
       "No convive con mascotas que salen al exterior",
-      "Hogar de riesgo bajo"
+      "No convive con personas de riesgo"
     ],
     "medium_risk": [
-      "Con acceso al exterior",
+      "Acesso ilimitado al exterior",
       "Consume carne cruda",
       "Con acceso al balcón",
       "Convive con mascotas que salen al exterior",
       "Caza de forma ocasional"
     ],
     "high_risk": [
-      "Hogar de riesgo alto",
+      "Convive con personas de riesgo",
       "Caza cada semana"
     ]
   }

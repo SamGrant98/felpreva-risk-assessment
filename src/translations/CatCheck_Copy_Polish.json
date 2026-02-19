@@ -160,7 +160,7 @@
     "age": "Wiek",
     "weight": "Waga",
     "pregnant": "Ciąża/karmienie",
-    "esccap": "Ryzyko ESCCAP:",
+    "esccap": "Ryzyko ESCCAP: {level}",
     "risk_profile": "Poziom ryzyka",
     "risks": [
       "Niskie",

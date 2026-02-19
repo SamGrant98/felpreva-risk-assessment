@@ -114,6 +114,23 @@ path {
   pointer-events: all;
 }
 
+#vetoquimolLogo {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  pointer-events: none;
+}
+
+#vetoquimolLogo img {
+  max-width: 72px;       /* control how wide it can be */
+  width: 100%;
+  height: auto;           /* keeps aspect ratio */
+  display: block;
+}
+
+
 #pinchContainer {
   z-index: 997;
   height: 100vh;
@@ -1579,7 +1596,7 @@ svg {
 
 .results_risk-text {
   /* font-size: 0.75rem; */
-  max-width: 60%;
+  /* max-width: 60%; */
   font-size: 2.5vh;
   font-weight: bold;
   text-align: center;
