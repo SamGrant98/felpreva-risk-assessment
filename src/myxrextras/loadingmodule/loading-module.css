@@ -1,6 +1,6 @@
 #loadingContainer {
   z-index: 800;
-  font-family: 'Gilroy-Medium';
+  font-family: 'Gilroy-Medium', sans-serif;
 }
 
 #loadBackground {
@@ -20,13 +20,14 @@
   z-index: 11;
   position: absolute;
   top: 0;
-  width: 100vw;
-  text-align: center;
+  width: 100%;
+  text-align: left;
   color: white;
-  font-size: 1.8em;
-  font-family: 'Gilroy-Medium';
+  font-size: 1.6em;
+  font-family: 'Gilroy-Medium', sans-serif;
   background-color: rgb(11, 23, 72);
   padding-top: 3vh;
+  padding-left: 1.75vh;
   padding-bottom: 1.75vh;
 }
 
@@ -110,7 +111,7 @@
 
 @font-face{
   font-family: 'Gilroy-Medium';
-  src: url('../../assets/fonts/Gilroy-Medium.ttf') format('truetype');
+  src: url('/assets/fonts/Gilroy-Medium.ttf') format('truetype');
 }
 
 #cameraPermissionsErrorAndroid, #microphonePermissionsErrorAndroid {
