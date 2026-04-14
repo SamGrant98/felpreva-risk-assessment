@@ -31,7 +31,7 @@ const makeTsLoader = () => ({
 const makeCssLoader = () => ({
   test: /\.css$/,
   exclude: /\/assets\//,
-  use: ['style-loader', 'css-loader'],
+  use: ['style-loader', { loader: 'css-loader', options: { url: false } }],
 })
 
 const makeSassLoader = () => ({
@@ -119,6 +119,7 @@ const config = {
   context: srcPath,
   devServer: {
     open: false,
+    port: 8082,
     compress: true,
     hot: true,
     liveReload: false,
@@ -133,6 +134,7 @@ const config = {
         errors: true,
       },
     },
+    allowedHosts: 'all',
   },
 }
 

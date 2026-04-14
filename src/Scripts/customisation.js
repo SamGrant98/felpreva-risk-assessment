@@ -3,6 +3,25 @@ export const textureSwapComponent = {
     const loader = new THREE.TextureLoader()
     let stage = 0
 
+    // Push .content-bottom above the keyboard when it opens on mobile
+    const applyKeyboardOffset = () => {
+      if (!window.visualViewport) return
+      const keyboardHeight = Math.max(0, window.innerHeight - window.visualViewport.height - window.visualViewport.offsetTop)
+      document.querySelectorAll('.content-bottom').forEach(element => {
+        element.style.bottom = keyboardHeight > 0 ? `${keyboardHeight}px` : ''
+      })
+    }
+
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', applyKeyboardOffset)
+    }
+
+    // Also apply on input focus — handles the case where keyboard is already open
+    // when transitioning between screens (no resize event fires)
+    document.querySelectorAll('.styled-input').forEach(input => {
+      input.addEventListener('focus', () => setTimeout(applyKeyboardOffset, 100))
+    })
+
     const confirmButtons = [
       document.getElementById('colour-confirm'),
       document.getElementById('name-confirm'),

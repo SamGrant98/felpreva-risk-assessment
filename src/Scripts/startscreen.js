@@ -37,6 +37,9 @@ const startScreenComponent = {
             requiredPermissions: () => ([XR8.XrPermissions.permissions().DEVICE_ORIENTATION]),
           })
         }
+        // Pause XR8 when the tab is hidden (e.g. phone screen locks or user switches apps)
+        // and resume when it becomes visible again — prevents WebGL "deleted object" errors
+        XR8.addCameraPipelineModule(window.XRExtras.PauseOnHidden.pipelineModule())
         this.el.sceneEl.setAttribute('xrweb', `allowedDevices: any; disableWorldTracking: ${this.data.disableWorldTracking}`)
       }
 
