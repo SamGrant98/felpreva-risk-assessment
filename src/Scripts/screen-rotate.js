@@ -1,6 +1,7 @@
 const screenRotateComponent = {
   init() {
     window.addEventListener('resize', this.CheckOrientation)
+    this.CheckOrientation()
   },
   CheckOrientation() {
     console.log('Rotated')

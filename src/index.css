@@ -120,7 +120,7 @@ path {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 99;
+  z-index: 1000;
   pointer-events: none;
 }
 
@@ -242,7 +242,7 @@ path {
   height: 100vh; /* fallback for iOS < 15.4 which doesn't support svh */
   height: 100svh;
   width: 100%;
-  background-color: #032D42;
+  background-color: #1B417C;
   background-image: url('/assets/UI/CatCheckBackground.jpg');
   position: fixed;
   top: 0;
