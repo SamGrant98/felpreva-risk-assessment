@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 298.33 55.6">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="184.56 0 113.77 55.6">
   <defs>
     <style>
       .cls-1 {
@@ -14,22 +14,12 @@
         fill: #575756;
       }
 
-      .cls-4, .cls-5 {
+      .cls-4 {
         fill: #fff;
-      }
-
-      .cls-5 {
-        font-family: CoconPro-Regular, CoconPro;
-        font-size: 24.3px;
-      }
-
-      .cls-6 {
-        letter-spacing: .04em;
       }
     </style>
   </defs>
   <g id="logo">
-    <text class="cls-5" transform="translate(0 33.8)"><tspan class="cls-6" x="0" y="0">#</tspan><tspan x="15.31" y="0">wespeakcat</tspan></text>
     <g>
       <path class="cls-4" d="M212.36,0h85.97v26.13c0,16.28-13.19,29.47-29.47,29.47h-56.5c-15.35,0-27.8-12.45-27.8-27.8h0c0-15.35,12.45-27.8,27.8-27.8Z"/>
       <g id="Layer_1-2" data-name="Layer 1-2">

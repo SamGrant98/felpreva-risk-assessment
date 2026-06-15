@@ -25,7 +25,7 @@
   },
   "customisation": {
     "intro": "Řekněte nám něco o své kočce",
-    "fur_pattern": "Jaký má váš kočka vzor srsti?",
+    "fur_pattern": "Jakou srst má vaše kočka?",
     "fur_options": [
       "Černá a bílá",
       "Zrzavá",
@@ -40,7 +40,7 @@
     "name_prompt": "Jak se jmenuje vaše kočka?",
     "name_tooltip": "Jméno",
     "age_prompt": "Kolik let je vaší kočce? (v letech)",
-    "age_tooltip": "Věk (ve letech)",
+    "age_tooltip": "Věk (v letech)",
     "weight_prompt": "Kolik váží?",
     "weight_tooltip": "Hmotnost (v kg)",
     "pregnancy_prompt": "Je březí nebo krmí koťata?",
@@ -116,7 +116,7 @@
     "options_risk_worms": "Vaše kočka by mohla být ohrožena nákazou vnitřními parazity, požádejte svého veterináře o další informace.",
     "options_risk_fleas": "Vaše kočka by mohla být vystavena riziku napadení blechami a klíšťaty, požádejte svého veterináře o další informace.",
     "options_risk_parasites": "Vaše kočka může být ohrožena parazity, požádejte svého veterináře o další informace.",
-    "options_risk_dontknow": "Poraďte se se svým veterinářem, jakou ochranu proti parazitům v současné době používáte.",
+    "options_risk_dontknow": "Poradte se se svym veterinarem, jakou ochranu proti parazitum v soucasne dobe pouzivate",
     "treatment_frequency": "Jak často bývá [CAT NAME] ošetřován/a proti parazitům?",
     "frequency_options": [
       "1-3x ročně",

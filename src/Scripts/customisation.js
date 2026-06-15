@@ -3,23 +3,54 @@ export const textureSwapComponent = {
     const loader = new THREE.TextureLoader()
     let stage = 0
 
-    // Push .content-bottom above the keyboard when it opens on mobile
+    // Keep the question UI above the on-screen keyboard on mobile (esp. iOS Safari).
+    //
+    // The screens are `position: fixed`, so two iOS behaviours fight each other:
+    //   1. Safari auto-scrolls the layout viewport to reveal the focused input,
+    //      which drags the whole fixed UI upward ("the page moves up").
+    //   2. `position: fixed` is anchored to the layout viewport, not the visual
+    //      viewport, so on its own `.content-bottom` sits behind the keyboard.
+    // Depending on timing you get one or the other — hence the inconsistency.
+    //
+    // We pin `.content-bottom` to the bottom of the *visual* viewport on every
+    // resize AND scroll, and cancel Safari's competing auto-scroll while the
+    // keyboard is open so the page never drifts.
+    const vv = window.visualViewport
+    let keyboardOpen = false
+
     const applyKeyboardOffset = () => {
-      if (!window.visualViewport) return
-      const keyboardHeight = Math.max(0, window.innerHeight - window.visualViewport.height - window.visualViewport.offsetTop)
+      if (!vv) return
+      const offsetBottom = Math.max(0, window.innerHeight - vv.height - vv.offsetTop)
       document.querySelectorAll('.content-bottom').forEach(element => {
-        element.style.bottom = keyboardHeight > 0 ? `${keyboardHeight}px` : ''
+        element.style.bottom = offsetBottom > 0 ? `${offsetBottom}px` : ''
       })
     }
 
-    if (window.visualViewport) {
-      window.visualViewport.addEventListener('resize', applyKeyboardOffset)
+    if (vv) {
+      vv.addEventListener('resize', applyKeyboardOffset)
+      vv.addEventListener('scroll', () => {
+        // Undo Safari's auto-scroll so the fixed UI never drifts upward, then
+        // re-pin. The guard stops this from looping once we're back at the top.
+        if (keyboardOpen && (vv.offsetTop !== 0 || window.scrollY !== 0)) {
+          window.scrollTo(0, 0)
+        }
+        applyKeyboardOffset()
+      })
     }
 
-    // Also apply on input focus — handles the case where keyboard is already open
-    // when transitioning between screens (no resize event fires)
+    // Track keyboard state and re-pin on focus — covers screen transitions while
+    // the keyboard is already open (no resize fires) and the animate-in period
+    // (no single reliable event, so sample a couple of times).
     document.querySelectorAll('.styled-input').forEach(input => {
-      input.addEventListener('focus', () => setTimeout(applyKeyboardOffset, 100))
+      input.addEventListener('focus', () => {
+        keyboardOpen = true
+        setTimeout(applyKeyboardOffset, 100)
+        setTimeout(applyKeyboardOffset, 300)
+      })
+      input.addEventListener('blur', () => {
+        keyboardOpen = false
+        applyKeyboardOffset()
+      })
     })
 
     const confirmButtons = [
