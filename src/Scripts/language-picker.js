@@ -26,6 +26,20 @@ const translationsMap = {
   sk: translationsSlovak,
 }
 
+// Shrinks an element's font-size (down to minFontSizePx) until its text
+// stops overflowing its own box. Needs the element to have a fixed width
+// and white-space: nowrap so scrollWidth reflects the real text width.
+// No-ops if the element isn't laid out yet (e.g. a hidden ancestor).
+function fitTextToWidth(el, minFontSizePx = 11) {
+  if (!el || !el.clientWidth) return
+  el.style.fontSize = ''
+  let fontSize = parseFloat(getComputedStyle(el).fontSize)
+  while (el.scrollWidth > el.clientWidth && fontSize > minFontSizePx) {
+    fontSize -= 1
+    el.style.fontSize = `${fontSize}px`
+  }
+}
+
 const languagePicker = {
   init() {
     this.picker = document.querySelector('.js-language-picker')
@@ -104,6 +118,10 @@ const languagePicker = {
         }
         element.innerHTML = text
         element.style.display = '' // unhide if previously hidden
+
+        if (element.hasAttribute('data-autosize')) {
+          fitTextToWidth(element)
+        }
       }
     })
 
@@ -168,4 +186,4 @@ if (window.XR8) {
   })
 }
 
-export { languagePicker, translationsMap }
+export { languagePicker, translationsMap, fitTextToWidth }

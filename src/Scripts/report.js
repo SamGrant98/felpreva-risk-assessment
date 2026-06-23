@@ -1,4 +1,4 @@
-import {translationsMap} from './language-picker'  // or wherever it's exported from
+import {translationsMap, fitTextToWidth} from './language-picker'  // or wherever it's exported from
 import {shareLatestPhoto} from '../myxrextras/mediarecorder/record-button'
 
 const reportComponent = {
@@ -99,8 +99,31 @@ const reportComponent = {
     pinch.classList.add('hidden')
     this.ConfigureReport()
     await this.PrepareReport()
+    this.ScaleCard()
 
     loadingScreen.classList.add('hidden')
+  },
+
+  ScaleCard() {
+    const reportScreen = document.getElementById('report-screen')
+    const heading = reportScreen.querySelector('h2.save')
+    const card = document.getElementById('report-card')
+
+    // Reset scale so we measure the card's natural size
+    card.style.transform = ''
+
+    const screenHeight = reportScreen.clientHeight
+    const headingRect = heading.getBoundingClientRect()
+    const headingBottom = headingRect.bottom - reportScreen.getBoundingClientRect().top
+    const paddingBottom = 20
+
+    const availableHeight = screenHeight - headingBottom - paddingBottom
+    const cardHeight = card.scrollHeight
+
+    if (cardHeight > availableHeight) {
+      const scale = availableHeight / cardHeight
+      card.style.transform = `scale(${scale})`
+    }
   },
   CloseReport() {
     const reportScreen = document.getElementById('report-screen')
