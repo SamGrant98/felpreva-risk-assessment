@@ -113,23 +113,24 @@ const reportComponent = {
     // Reset any previous scaling
     card.style.transform = ''
 
-    // Height of the full report screen (100svh equivalent)
-    const screenHeight = reportScreen.clientHeight
+    // Use visualViewport for the true visible height on iOS Safari
+    // (clientHeight of a fixed element may differ due to URL bar handling)
+    const screenHeight = window.visualViewport
+      ? window.visualViewport.height
+      : reportScreen.clientHeight
 
-    // Bottom of the heading relative to the top of reportScreen
-    const headingBottom = heading.offsetTop + heading.offsetHeight
+    // Bottom of the heading relative to the top of the fixed report screen
+    const headingBottom = heading.getBoundingClientRect().bottom
 
     // Reserve space for the fixed save button at the bottom
-    const saveButtonHeight = saveButtonContainer ? saveButtonContainer.offsetHeight : 80
-    const gap = 8
+    const saveButtonHeight = saveButtonContainer ? saveButtonContainer.offsetHeight : 70
+    const gap = 12
 
     const availableHeight = screenHeight - headingBottom - saveButtonHeight - gap
     const cardHeight = card.scrollHeight
 
     if (cardHeight > availableHeight && availableHeight > 0) {
       const scale = availableHeight / cardHeight
-      // transform: scale keeps the card's layout width intact (unlike zoom)
-      // transform-origin: top center is set in CSS so the card scales down from its top edge
       card.style.transform = `scale(${scale})`
     }
   },
