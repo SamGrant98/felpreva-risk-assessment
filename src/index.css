@@ -1707,9 +1707,7 @@ svg {
   background-color: none;
   height: auto;
   width: 85vw;
-  /* overflow: hidden; */
-  margin: 0 auto;
-  transform-origin: top center;
+  /* position, top, left, transform set by ScaleCard() */
 }
 
 h2.important {

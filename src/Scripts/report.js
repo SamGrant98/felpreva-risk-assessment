@@ -110,28 +110,42 @@ const reportComponent = {
     const card = document.getElementById('report-card')
     const saveButtonContainer = reportScreen.querySelector('.content-bottom')
 
-    // Reset any previous scaling
+    // Reset all previous JS-applied positioning
+    card.style.position = ''
+    card.style.top = ''
+    card.style.left = ''
     card.style.transform = ''
+    card.style.transformOrigin = ''
+    card.style.width = ''
 
-    // Use visualViewport for the true visible height on iOS Safari
-    // (clientHeight of a fixed element may differ due to URL bar handling)
+    // True visible screen height (handles iOS Safari URL bar correctly)
     const screenHeight = window.visualViewport
       ? window.visualViewport.height
-      : reportScreen.clientHeight
+      : window.innerHeight
 
-    // Bottom of the heading relative to the top of the fixed report screen
+    // Where the heading ends in viewport coordinates — card must start below this
     const headingBottom = heading.getBoundingClientRect().bottom
+    const cardTop = headingBottom + 8
 
-    // Reserve space for the fixed save button at the bottom
-    const saveButtonHeight = saveButtonContainer ? saveButtonContainer.offsetHeight : 70
-    const gap = 12
+    // Explicitly pin card below heading, centred horizontally
+    card.style.position = 'absolute'
+    card.style.top = `${cardTop}px`
+    card.style.left = '50%'
+    card.style.width = '85vw'
 
-    const availableHeight = screenHeight - headingBottom - saveButtonHeight - gap
+    // Measure card's natural height now that it's positioned
     const cardHeight = card.scrollHeight
+    const saveButtonHeight = saveButtonContainer ? saveButtonContainer.offsetHeight : 70
+    const availableHeight = screenHeight - cardTop - saveButtonHeight - 8
 
     if (cardHeight > availableHeight && availableHeight > 0) {
       const scale = availableHeight / cardHeight
-      card.style.transform = `scale(${scale})`
+      // translateX(-50%) centres the card (left: 50% + half-width offset)
+      // scale() shrinks it — transform-origin top center keeps top edge pinned
+      card.style.transform = `translateX(-50%) scale(${scale})`
+      card.style.transformOrigin = 'top center'
+    } else {
+      card.style.transform = 'translateX(-50%)'
     }
   },
   CloseReport() {
