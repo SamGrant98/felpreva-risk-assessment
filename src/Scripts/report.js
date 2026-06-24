@@ -108,21 +108,27 @@ const reportComponent = {
     const reportScreen = document.getElementById('report-screen')
     const heading = reportScreen.querySelector('h2.save')
     const card = document.getElementById('report-card')
+    const saveButtonContainer = reportScreen.querySelector('.content-bottom')
 
-    // Reset scale so we measure the card's natural size
-    card.style.transform = ''
+    // Reset any previous zoom so we measure the card's natural size
+    card.style.zoom = ''
 
+    // Height of the full report screen (100svh equivalent)
     const screenHeight = reportScreen.clientHeight
-    const headingRect = heading.getBoundingClientRect()
-    const headingBottom = headingRect.bottom - reportScreen.getBoundingClientRect().top
-    const paddingBottom = 20
 
-    const availableHeight = screenHeight - headingBottom - paddingBottom
+    // Bottom of the heading, relative to the top of reportScreen
+    const headingBottom = heading.offsetTop + heading.offsetHeight
+
+    // Reserve space for the fixed save button at the bottom
+    const saveButtonHeight = saveButtonContainer ? saveButtonContainer.offsetHeight : 80
+    const gap = 8
+
+    const availableHeight = screenHeight - headingBottom - saveButtonHeight - gap
     const cardHeight = card.scrollHeight
 
-    if (cardHeight > availableHeight) {
+    if (cardHeight > availableHeight && availableHeight > 0) {
       const scale = availableHeight / cardHeight
-      card.style.transform = `scale(${scale})`
+      card.style.zoom = scale
     }
   },
   CloseReport() {
