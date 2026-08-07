@@ -205,10 +205,20 @@ export const storeData = {
               locationData.address?.town ||
               locationData.address?.village ||
               null
+            // Borough/district-level detail (e.g. "Westminster"), for disambiguating
+            // cities that share a name. Not every Nominatim result includes one of
+            // these fields, particularly outside larger cities.
+            const area =
+              locationData.address?.city_district ||
+              locationData.address?.borough ||
+              locationData.address?.suburb ||
+              locationData.address?.neighbourhood ||
+              null
 
             localStorage.setItem('location_country', countryCode)
             localStorage.setItem('location_city', city)
-            console.log(`🌍 Country: ${countryCode}, 🏙️ City: ${city}`)
+            localStorage.setItem('location_area', area)
+            console.log(`🌍 Country: ${countryCode}, 🏙️ City: ${city}, 📍 Area: ${area}`)
           })
           .catch(err => console.warn('🌐 Reverse geolocation failed:', err))
       },
@@ -224,7 +234,7 @@ export const storeData = {
       'name', 'age', 'weight', 'pregnancy',
       'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6',
       'Q8', 'Q12', 'Q13',
-      'location_country', 'location_city', 'latitude', 'longitude',
+      'location_country', 'location_city', 'location_area', 'latitude', 'longitude',
     ]
     console.log('🔎 Debugging stored data:')
     fields.forEach((field) => {
@@ -353,6 +363,7 @@ export const storeData = {
 
       location_country: vStr('location_country'),
       location_city: vStr('location_city'),
+      location_area: vStr('location_area'),
 
       // timings
       startedAt: A.startedAt,

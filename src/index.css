@@ -1245,6 +1245,16 @@ svg {
   height: auto; /* Maintains aspect ratio */
   padding: 10px; /* Padding around the logo */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  transition: top 0.2s ease;
+}
+
+/* While the on-screen keyboard is open (see customisation.js focus/blur
+   handlers, which toggle this class on <body>), pull the heading graphic up
+   out of the way so the question card and Confirm button never land on top
+   of it, regardless of how tall the keyboard ends up being on a given
+   device. */
+body.keyboard-open .text-graphic {
+  top: 4%;
 }
 
 .icon-embed-xsmall,

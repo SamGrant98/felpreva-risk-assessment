@@ -44,11 +44,13 @@ export const textureSwapComponent = {
     document.querySelectorAll('.styled-input').forEach(input => {
       input.addEventListener('focus', () => {
         keyboardOpen = true
+        document.body.classList.add('keyboard-open')
         setTimeout(applyKeyboardOffset, 100)
         setTimeout(applyKeyboardOffset, 300)
       })
       input.addEventListener('blur', () => {
         keyboardOpen = false
+        document.body.classList.remove('keyboard-open')
         applyKeyboardOffset()
       })
     })
