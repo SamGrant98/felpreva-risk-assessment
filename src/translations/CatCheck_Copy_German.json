@@ -62,7 +62,7 @@
       "Nein",
       "sie bleibt nur drinnen"
     ],
-    "outdoor_warning": "Vorsicht vor schmutzigen Schuhen!",
+    "outdoor_warning": "Vorsicht vor schmutzigen Schuhen! Über Schmutzreste an Schuhsohlen können infektiöse Parasiteneier ins Haus gelangen.",
     "other_pets": "Lebt [CAT NAME] mit anderen Haustieren zusammen, die nach draußen gehen?",
     "other_pets_options": [
       "Ja",

@@ -62,7 +62,7 @@
       "",
       "101"
     ],
-    "outdoor_warning": "102",
+    "outdoor_warning": "102, 103",
     "other_pets": "104",
     "other_pets_options": [
       "105",
@@ -116,7 +116,7 @@
     "options_risk_worms": "130",
     "options_risk_fleas": "131",
     "options_risk_parasites": "132",
-    "options_risk_dontknow": "",
+    "options_risk_dontknow": "132",
     "treatment_frequency": "137",
     "frequency_options": [
       "148",

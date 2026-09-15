@@ -62,7 +62,7 @@
       "Non",
       "chat exclusivement d’intérieur"
     ],
-    "outdoor_warning": "Attention aux chaussures pleines de boue!",
+    "outdoor_warning": "Attention aux chaussures pleines de boue! Les chaussures sales peuvent apporter des parasites à la maison.",
     "other_pets": "[CAT NAME] cohabite-t-il avec d’autres animaux de compagnie qui ont accès à l’extérieur?",
     "other_pets_options": [
       "Oui",

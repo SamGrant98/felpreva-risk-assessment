@@ -88,6 +88,7 @@ const questionnairComponent = {
           translations.treatment.options_risk_worms,
           translations.treatment.options_risk_fleas,
           translations.treatment.options_risk_parasites,
+          translations.treatment.options_risk_dontknow,
         ];
       } else {
         console.error("Translations object is missing required properties.")
@@ -268,6 +269,7 @@ const questionnairComponent = {
               stage = 8
             } else if (answer === 'dont know') {
               stage = 11
+              this.UpdateDYK(10)
             }
             break
           case 9:
