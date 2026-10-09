@@ -1,3 +1,29 @@
+// Bump when the analytics payload gains or changes fields, so the dashboard can
+// tell old-build rows from new ones without relying on a deploy date
+// (Cloudflare can serve the old build for up to 24h after a deploy).
+const TRACKING_VERSION = 2
+
+// Permission-free country guess. Timezone first (set by the OS, so it follows
+// where the phone actually is); browser language region second (many phones
+// default to en-US whatever the country, so it is the weaker signal).
+const TZ_COUNTRY = {
+  'Europe/Paris': 'FR', 'Europe/London': 'GB', 'Europe/Madrid': 'ES',
+  'Atlantic/Canary': 'ES', 'Africa/Ceuta': 'ES', 'Europe/Monaco': 'MC',
+  'Europe/Brussels': 'BE', 'Europe/Luxembourg': 'LU', 'Europe/Zurich': 'CH',
+  'Europe/Dublin': 'IE', 'Europe/Lisbon': 'PT', 'Europe/Berlin': 'DE',
+  'Europe/Rome': 'IT', 'Europe/Amsterdam': 'NL', 'Europe/Andorra': 'AD',
+  'Indian/Reunion': 'RE', 'America/Martinique': 'MQ', 'America/Guadeloupe': 'GP',
+}
+
+function guessCountry(timezone, languages) {
+  if (timezone && TZ_COUNTRY[timezone]) return TZ_COUNTRY[timezone]
+  for (const lang of languages || []) {
+    const m = /^[a-z]{2,3}[-_]([A-Z]{2})$/i.exec(lang || '')
+    if (m) return m[1].toUpperCase()
+  }
+  return null
+}
+
 export const storeData = {
   // =========================
   // Analytics state
@@ -19,6 +45,8 @@ export const storeData = {
     window.storeData = this
     this.InitAnalytics()
     this.WatchSessionEnd()
+    this.CaptureEnvironment()
+    this.WatchXR()
     this.RequestLocation()
 
     const restart = document.getElementById('restart-button')
@@ -187,17 +215,142 @@ export const storeData = {
   // =========================
   // Location
   // =========================
+  // Records WHY a session has no country, instead of only warning in the console.
+  // geo_status values, in the order a session moves through them:
+  //   unsupported   - no navigator.geolocation
+  //   pending       - asked, no answer yet (prompt ignored or still showing)
+  //   denied        - user or browser refused (typical of in-app browsers / iframes)
+  //   unavailable   - permission given but the device could not get a fix
+  //   timeout       - permission given but no fix within 15s
+  //   lookup_pending- got coordinates, waiting on the reverse-geocode
+  //   lookup_failed - reverse-geocode errored or returned no country
+  //   ok            - country stored
+  _setGeoStatus(status) {
+    this._geoStatus = status
+    try { sessionStorage.setItem('cc_geo_status_v1', status) } catch (e) {}
+  },
+
+  CaptureEnvironment() {
+    let timezone = null
+    try { timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || null } catch (e) {}
+
+    const languages = (navigator.languages && navigator.languages.length)
+      ? Array.from(navigator.languages)
+      : [navigator.language].filter(Boolean)
+
+    let inIframe = false
+    try { inIframe = window.top !== window.self } catch (e) { inIframe = true } // cross-origin parent
+
+    this._env = {
+      timezone,
+      browserLang: languages[0] || null,
+      fallbackCountry: guessCountry(timezone, languages),
+      userAgent: (navigator.userAgent || '').slice(0, 512),
+      inIframe,
+    }
+
+    // Permission state before we ask: 'denied' here means the environment
+    // (or an earlier visit) has already blocked location.
+    this._geoPermission = null
+    try {
+      if (navigator.permissions && navigator.permissions.query) {
+        navigator.permissions.query({name: 'geolocation'})
+          .then((p) => { this._geoPermission = p.state })
+          .catch(() => { this._geoPermission = 'query_failed' })
+      } else {
+        this._geoPermission = 'unsupported'
+      }
+    } catch (e) {
+      this._geoPermission = 'query_failed'
+    }
+  },
+
+  // 8th Wall engine diagnostics. Everything is wrapped so a failure here can
+  // never stop the AR from running.
+  //   xr_loaded / xr_load_s - did the engine finish loading, and how long it took
+  //                           (seconds since page load). Not loaded = left during loading.
+  //   xr_compatible         - 8th Wall's own verdict, using the scene's config (allowedDevices: any)
+  //   xr_incompatible_reasons - e.g. UNSUPPORTED_BROWSER, MISSING_USER_MEDIA
+  //   xr_device             - deviceEstimate() + incompatibleReasonDetails(),
+  //                           including 8th Wall's inAppBrowser / inAppBrowserType
+  //   camera_status         - last camera pipeline status: requesting / hasStream /
+  //                           hasVideo / failed (null = camera never requested)
+  WatchXR() {
+    this._xr = {
+      loaded: false, loadS: null, compatible: null, reasons: null,
+      device: null, cameraStatus: null, cameraReason: null,
+    }
+
+    const onLoaded = () => {
+      try {
+        this._xr.loaded = true
+        this._xr.loadS = Math.round(performance.now() / 100) / 10
+
+        const D = XR8.XrDevice
+        const any = (XR8.XrConfig && XR8.XrConfig.device && XR8.XrConfig.device().ANY) || 'any'
+        const cfg = {allowedDevices: any}
+
+        this._xr.compatible = Boolean(D.isDeviceBrowserCompatible(cfg))
+
+        const names = {}
+        Object.entries(D.IncompatibilityReasons || {}).forEach(([k, v]) => { names[v] = k })
+        this._xr.reasons = (D.incompatibleReasons(cfg) || []).map(r => names[r] || String(r))
+
+        const est = D.deviceEstimate() || {}
+        this._xr.device = {
+          os: est.os ?? null,
+          osVersion: est.osVersion ?? null,
+          manufacturer: est.manufacturer ?? null,
+          model: est.model ?? null,
+          browser: est.browser ?? null,
+          details: D.incompatibleReasonDetails(cfg) || null,
+        }
+      } catch (e) {
+        console.warn('XR diagnostics failed:', e)
+      }
+
+      try {
+        XR8.addCameraPipelineModule({
+          name: 'cc-camera-status',
+          onCameraStatusChange: ({status, reason}) => {
+            this._xr.cameraStatus = status || null
+            if (reason) {
+              let r = reason
+              try { r = typeof reason === 'string' ? reason : (reason.name || reason.message || JSON.stringify(reason)) } catch (e) { r = String(reason) }
+              this._xr.cameraReason = String(r).slice(0, 200)
+            }
+          },
+        })
+      } catch (e) {
+        console.warn('Camera status module failed:', e)
+      }
+    }
+
+    if (window.XR8) onLoaded()
+    else window.addEventListener('xrloaded', onLoaded, {once: true})
+  },
+
   RequestLocation() {
     console.log('📍 Requesting location...')
+    if (!('geolocation' in navigator)) {
+      this._setGeoStatus('unsupported')
+      return
+    }
+    this._setGeoStatus('pending')
+
     navigator.geolocation.getCurrentPosition(
       (pos) => {
+        this._setGeoStatus('lookup_pending')
         const lat = pos.coords.latitude
         const lon = pos.coords.longitude
         localStorage.setItem('latitude', lat)
         localStorage.setItem('longitude', lon)
 
         fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`)
-          .then(res => res.json())
+          .then((res) => {
+            if (!res.ok) throw new Error(`Nominatim HTTP ${res.status}`)
+            return res.json()
+          })
           .then((locationData) => {
             const countryCode = locationData.address?.country_code?.toUpperCase() || null
             const city =
@@ -215,14 +368,30 @@ export const storeData = {
               locationData.address?.neighbourhood ||
               null
 
+            if (!countryCode) {
+              this._setGeoStatus('lookup_failed')
+              console.warn('🌐 Reverse geolocation returned no country')
+              return
+            }
+
             localStorage.setItem('location_country', countryCode)
             localStorage.setItem('location_city', city)
             localStorage.setItem('location_area', area)
+            this._setGeoStatus('ok')
             console.log(`🌍 Country: ${countryCode}, 🏙️ City: ${city}, 📍 Area: ${area}`)
           })
-          .catch(err => console.warn('🌐 Reverse geolocation failed:', err))
+          .catch((err) => {
+            this._setGeoStatus('lookup_failed')
+            console.warn('🌐 Reverse geolocation failed:', err)
+          })
       },
-      error => console.warn('❌ Geolocation failed or denied:', error)
+      (error) => {
+        const byCode = {1: 'denied', 2: 'unavailable', 3: 'timeout'}
+        this._setGeoStatus(byCode[error && error.code] || 'error')
+        console.warn('❌ Geolocation failed or denied:', error)
+      },
+      // timeout only starts once permission is granted; an ignored prompt stays 'pending'
+      {enableHighAccuracy: false, timeout: 15000, maximumAge: 10 * 60 * 1000}
     )
   },
 
@@ -373,6 +542,24 @@ export const storeData = {
       stepOrder,
       lastStep: A.lastStep,
       completed: isComplete,
+
+      // diagnostics (tracking v2)
+      tracking_version: TRACKING_VERSION,
+      geo_status: this._geoStatus || null,
+      geo_permission: this._geoPermission || null,
+      client_tz: this._env?.timezone ?? null,
+      browser_lang: this._env?.browserLang ?? null,
+      fallback_country: this._env?.fallbackCountry ?? null,
+      user_agent: this._env?.userAgent ?? null,
+      in_iframe: this._env?.inIframe ?? null,
+
+      xr_loaded: this._xr?.loaded ?? null,
+      xr_load_s: this._xr?.loadS ?? null,
+      xr_compatible: this._xr?.compatible ?? null,
+      xr_incompatible_reasons: this._xr?.reasons ?? null,
+      xr_device: this._xr?.device ?? null,
+      camera_status: this._xr?.cameraStatus ?? null,
+      camera_fail_reason: this._xr?.cameraReason ?? null,
     }
 
     if (isComplete) {
