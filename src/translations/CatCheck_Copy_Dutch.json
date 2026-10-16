@@ -5,6 +5,10 @@
     "loading": "",
     "start": "Tik om te starten",
     "rotate": "Draai je scherm",
+    "scan_qr": "Scan met je telefoon om te starten",
+    "open_in_browser": "Open deze link in Safari of Chrome om te starten",
+    "copy_link": "Link kopiëren",
+    "link_copied": "Link gekopieerd",
     "camera_access": "“URL_TBD” wil toegang tot de camera"
   },
   "ui_labels": {

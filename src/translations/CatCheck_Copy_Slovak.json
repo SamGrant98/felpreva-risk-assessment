@@ -5,6 +5,10 @@
     "loading": "",
     "start": "Kliknite sem",
     "rotate": "Otočte obrazovku",
+    "scan_qr": "Naskenujte telefónom a začnite",
+    "open_in_browser": "Otvorte tento odkaz v Safari alebo Chrome a začnite",
+    "copy_link": "Kopírovať odkaz",
+    "link_copied": "Odkaz skopírovaný",
     "camera_access": "„CatCheck.com“ žiada o prístup k fotoaparátu"
   },
   "ui_labels": {

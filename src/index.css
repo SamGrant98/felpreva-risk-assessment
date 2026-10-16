@@ -274,6 +274,90 @@ path {
   align-items: center;
 }
 
+/* Rotate / incompatible-device overlay layout. The logo ids are shared with
+   the start screen, so everything here is scoped to #rotatedScreen. The logo
+   is capped by height as well as width so it fits a short landscape screen. */
+#rotatedScreen {
+  justify-content: center;
+  gap: clamp(16px, 5vh, 48px);
+  gap: clamp(16px, 5svh, 48px);
+  padding: 24px 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#rotatedScreen .text-graphic {
+  position: static;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: min(70vw, 420px);
+  max-width: 100%;
+  max-height: 40vh;
+  max-height: 40svh;
+  object-fit: contain;
+  padding: 0;
+  flex-shrink: 1;
+  min-height: 0;
+}
+
+/* Smaller logo when there's also a QR code / message to fit */
+#rotatedScreen.is-incompatible .text-graphic {
+  max-height: 22vh;
+  max-height: 22svh;
+}
+
+#rotatedScreen #rotateText {
+  position: static;
+  top: auto;
+}
+
+.incompat-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 420px;
+  text-align: center;
+}
+
+#qrCode {
+  width: min(240px, 34vh);
+  width: min(240px, 34svh);
+  aspect-ratio: 1 / 1;
+  padding: 12px;
+  background: #fff;
+  border-radius: 12px;
+  box-sizing: content-box;
+}
+
+#qrCode svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.incompat-text {
+  font-family: "ff-cocon-pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  color: #fff;
+  margin: 0;
+}
+
+#copyLinkButton {
+  font-family: "ff-cocon-pro", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #254079;
+  background: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 28px;
+  cursor: pointer;
+}
+
 #felprevaLogo {
   position: absolute;
   top: 25%; /* Position at the top third of the container */

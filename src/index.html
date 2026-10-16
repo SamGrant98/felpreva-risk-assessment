@@ -202,6 +202,21 @@
     <div id="rotateText">
       <h2 data-i18n="launch.rotate" class="pulse-text">ROTATE YOUR SCREEN</h2>
     </div>
+
+    <!-- Desktop / laptop: QR to open the experience on a phone (see screen-rotate.js) -->
+    <div id="qrPanel" class="incompat-panel hidden">
+      <div id="qrCode" aria-hidden="true"></div>
+      <h2 data-i18n="launch.scan_qr" class="incompat-text">SCAN WITH YOUR PHONE TO START</h2>
+    </div>
+
+    <!-- Incompatible phone, usually an in-app browser: open in Safari / Chrome -->
+    <div id="openInBrowserPanel" class="incompat-panel hidden">
+      <h2 data-i18n="launch.open_in_browser" class="incompat-text">OPEN THIS LINK IN SAFARI OR CHROME TO START</h2>
+      <button id="copyLinkButton" type="button">
+        <span id="copyLinkLabel" data-i18n="launch.copy_link">COPY LINK</span>
+        <span id="copyLinkDone" data-i18n="launch.link_copied" class="hidden">LINK COPIED</span>
+      </button>
+    </div>
   </div>
 
   <div id= "resetButton">

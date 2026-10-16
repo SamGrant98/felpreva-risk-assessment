@@ -5,6 +5,10 @@
     "loading": "LOADING…",
     "start": "TAP TO START",
     "rotate": "ROTATE YOUR SCREEN",
+    "scan_qr": "SCAN WITH YOUR PHONE TO START",
+    "open_in_browser": "OPEN THIS LINK IN SAFARI OR CHROME TO START",
+    "copy_link": "COPY LINK",
+    "link_copied": "LINK COPIED",
     "camera_access": "“CatCheck.com” would like to Access the Camera"
   },
   "ui_labels": {

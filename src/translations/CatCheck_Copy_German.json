@@ -5,6 +5,10 @@
     "loading": "",
     "start": "Tippen zum Starten",
     "rotate": "Drehen Sie Ihren Bildschirm",
+    "scan_qr": "Scannen Sie mit Ihrem Smartphone, um zu starten",
+    "open_in_browser": "Öffnen Sie diesen Link in Safari oder Chrome, um zu starten",
+    "copy_link": "Link kopieren",
+    "link_copied": "Link kopiert",
     "camera_access": "“CatCheck.com” möchte auf deine Kamera zugreifen"
   },
   "ui_labels": {
