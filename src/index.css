@@ -274,6 +274,21 @@ path {
   align-items: center;
 }
 
+/* Start / loading screen logo: cap by height too, so it doesn't blow up on
+   wide screens (desktop, landscape). Phones in portrait are unaffected. */
+#startScreen .text-graphic {
+  width: min(70%, 420px);
+  max-height: 35vh;
+  max-height: 35svh;
+  object-fit: contain;
+}
+
+/* Incompatible devices: keep the QR / open-in-browser screen above the
+   start / loading screen and anything 8th Wall shows. */
+#rotatedScreen.is-incompatible {
+  z-index: 1000;
+}
+
 /* Rotate / incompatible-device overlay layout. The logo ids are shared with
    the start screen, so everything here is scoped to #rotatedScreen. The logo
    is capped by height as well as width so it fits a short landscape screen. */

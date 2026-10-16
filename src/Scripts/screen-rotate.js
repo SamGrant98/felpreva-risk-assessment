@@ -17,8 +17,16 @@ import qrcode from './vendor/qrcode-generator'
 
 const MOBILE_OS = ['iOS', 'Android']
 
+// Module-level, because A-Frame gives the component its own `this`.
+let started = false
+
 const screenRotateComponent = {
+  // Runs once, as early as possible (see the DOMContentLoaded hook at the
+  // bottom), so desktop users see the QR straight away instead of the loading
+  // screen. The A-Frame component init just calls this again and it no-ops.
   init() {
+    if (started) return
+    started = true
     this.mode = this.GuessMode()
     this.qrRendered = false
 
@@ -30,10 +38,6 @@ const screenRotateComponent = {
     const onXR = () => this.RefineWithXR()
     if (window.XR8) onXR()
     else window.addEventListener('xrloaded', onXR, {once: true})
-  },
-
-  remove() {
-    window.removeEventListener('resize', this.CheckOrientation)
   },
 
   // Before XR8 has loaded: no touch support at all means desktop.
@@ -135,6 +139,18 @@ const screenRotateComponent = {
       }
     })
   },
+}
+
+// Start before A-Frame / the scene has loaded. Component methods are called
+// with the component as `this`, so the early call uses the object itself and
+// the later A-Frame init returns immediately via the `started` flag.
+const startEarly = () => {
+  screenRotateComponent.init.call(screenRotateComponent)
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', startEarly, {once: true})
+} else {
+  startEarly()
 }
 
 export {screenRotateComponent}

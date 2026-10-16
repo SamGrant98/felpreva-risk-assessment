@@ -1,3 +1,4 @@
+// qrcode-generator 1.4.4 (MIT, Kazuhiko Arase) - vendored, converted to an ES module.
 //---------------------------------------------------------------------
 //
 // QR Code Generator for JavaScript
@@ -2286,12 +2287,6 @@ var qrcode = function() {
 
 }();
 
-(function (factory) {
-  if (typeof define === 'function' && define.amd) {
-      define([], factory);
-  } else if (typeof exports === 'object') {
-      module.exports = factory();
-  }
-}(function () {
-    return qrcode;
-}));
+// ES module export (UMD wrapper removed so webpack + babel transform-runtime
+// can't turn this into an empty module).
+export default qrcode
